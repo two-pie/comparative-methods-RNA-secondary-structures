@@ -6,4 +6,3 @@ rm -f get-pip.py
 WORKDIR /gp
 RUN git clone https://github.com/bdslab/aspralign.git
 ADD molecolePerTest ./molecolePerTest
-CMD tail -f /dev/null
