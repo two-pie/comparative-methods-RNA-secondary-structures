@@ -4,6 +4,11 @@ RUN apk add --no-cache git python3 build-base perl && \
 python3 get-pip.py; \
 rm -f get-pip.py
 WORKDIR /gp
-RUN git clone https://github.com/bdslab/aspralign.git
-ADD molecolePerTest ./molecolePerTest
+#ASPRAlign
+RUN git clone https://github.com/bdslab/aspralign.git; \
+#PSTAG
+mkdir pstag && cd pstag; \
+wget -P /gp/pstag http://pstag.dna.bio.keio.ac.jp/download/pstag2_1_2-unix.zip && unzip pstag2_1_2-unix.zip && rm pstag2_1_2-unix.zip; \
+cd pstag2_1_2-unix && chmod +x pstag && cd ..;
+ADD molecolePerTest ./molecolePerTest 
 CMD tail -f /dev/null
