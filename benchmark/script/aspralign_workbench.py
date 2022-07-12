@@ -10,7 +10,7 @@ def aspralign_workbench(molecules_dir, output_dir):
     # run aspralign workbench
     subprocess.run(['java', '-jar', 'ASPRAlignWorkbench.jar', '-f', molecules_dir])
 
-    # read csv file with as pandas dataframe
+    # read csv file with pandas
     csv = pd.read_csv(os.path.join(molecules_dir, 'ASPRAlignComparisonResults.csv'))
 
     # drop unnecessary columns
