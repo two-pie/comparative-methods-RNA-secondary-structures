@@ -6,10 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import os
 import time
-from alive_progress import alive_bar
 
 
-def __setup_driver(url):
+def __setup_driver():
     options = Options()
 
     # active headless mode
@@ -21,46 +20,70 @@ def __setup_driver(url):
     # create web driver
     dr = webdriver.Chrome(options=options, service=Service(ChromeDriverManager().install()))
 
-    # navigate to url
-    dr.get(url)
     return dr
 
 
-def __fill_csv(molecules_dir, output_file, driver):
-    df = pd.DataFrame(columns=['Molecule 1', 'Molecule 2', 'Distance', 'Execution time [ns]'])
-    molecules = os.listdir(molecules_dir)
-    # total pairs of molecules
-    pairs = sum(range(1, len(molecules)))
+def __nestedalign(directory, df, driver):
+    # list of molecules in the directory
+    molecules = sorted(os.listdir(directory))
 
-    with alive_bar(pairs, title=os.path.basename(output_file),
-                   monitor='{count} molecules out of {total} calculated') as bar:
-        for i, filename_1 in enumerate(sorted(molecules), start=1):
-            with open(os.path.join(molecules_dir, filename_1), 'r') as f:
-                molecules_1 = f.read()
-                for filename_2 in molecules[i:]:
-                    with open(os.path.join(molecules_dir, filename_2), 'r') as f:
-                        molecules_2 = f.read()
-                        driver.find_element(By.ID, 'arn1').send_keys(f'>{filename_1}\n{molecules_1}')
-                        driver.find_element(By.ID, 'arn2').send_keys(f'>{filename_2}\n{molecules_2}')
-                        initial_time = time.time_ns()
-                        driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[1]').click()
-                        final_time = time.time_ns() - initial_time
-                        score = driver.find_element(By.XPATH, "/html/body/div[4]/div[1]/h5[1]/span").text
-                        df.loc[len(df)] = [os.path.splitext(filename_1)[0], os.path.splitext(filename_2)[0], score,
-                                           final_time]
-                        driver.back()
-                        driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[2]').click()
-                        bar()
-    df.to_csv(output_file, index=False)
+    # use list comprehension to get all pairs of molecules
+    molecule_pairs = [(molecule_1, molecule_2) for i, molecule_1 in enumerate(molecules, start=1) for molecule_2 in
+                      molecules[i:]]
+
+    # iterate over all pairs of molecules
+    for molecule_1, molecule_2 in molecule_pairs:
+        with open(os.path.join(directory, molecule_1), 'r') as file_1:
+            # get the content of the first molecule
+            molecules_1 = file_1.read()
+            with open(os.path.join(directory, molecule_2), 'r') as file_2:
+                # get the content of the second molecule
+                molecules_2 = file_2.read()
+
+                # send the content of the two molecules to the website
+                driver.find_element(By.ID, 'arn1').send_keys(f'>{molecule_1}\n{molecules_1}')
+                driver.find_element(By.ID, 'arn2').send_keys(f'>{molecule_2}\n{molecules_2}')
+
+                # save the initial time
+                initial_time = time.time_ns()
+
+                # click on the button to start the alignment
+                driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[1]').click()
+
+                # save the final time
+                final_time = time.time_ns() - initial_time
+
+                # get the score
+                score = driver.find_element(By.XPATH, "//*[@id='align_score']").text
+
+                # return to the previous page
+                driver.back()
+
+                # reset the input fields
+                driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[2]').click()
+
+                # save the data in the dataframe
+                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], score, final_time]
 
 
-def csv(molecules, output_dir):
+def csv(molecules_dirs, output_files):
     # creating web driver
-    driv = __setup_driver('https://nestedalign.lri.fr/index.php')
+    driver = __setup_driver()
 
-    # creating csv for each molecule
-    for molecules, output_dir in zip(molecules, output_dir):
-        __fill_csv(molecules, output_dir, driv)
+    # nagivate to nestedalign website
+    driver.get('https://nestedalign.lri.fr/index.php')
 
-    # closing web driver
-    driv.quit()
+    # create a csv file for each directory of molecules
+    for directory, output in zip(molecules_dirs, output_files):
+        # create a dataframe for the csv file
+        df = pd.DataFrame(columns=['Molecule 1', 'Molecule 2', 'Distance', 'Execution time [ns]'])
+
+        # fill the dataframe with the data from the nestedalign website
+        __nestedalign(directory, df, driver)
+
+        # save the dataframe as a csv file
+        df.to_csv(output, index=False)
+        print(f'{output} created')
+
+    # shutting down driver
+    driver.quit()

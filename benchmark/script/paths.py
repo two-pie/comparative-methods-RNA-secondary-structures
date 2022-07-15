@@ -9,9 +9,9 @@ ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 
 BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Bacteria', '5S')
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
 
-# ASPRAlign jar
-ASPRALIGN_WORKBENCH_JAR = os.path.join(WORKBENCH_PATH, 'ASPRAlign-0.92', 'ASPRAlignWorkbench.jar')
-ASPRALIGN_JAR = os.path.join(WORKBENCH_PATH, 'ASPRAlign-0.92', 'ASPRAlign.jar')
+# ASPRAlign
+ASPRALIGN_WORKBENCH_JAR = os.path.join(WORKBENCH_PATH, 'script', 'aspralign', 'ASPRAlignWorkbench.jar')
+ASPRALIGN_CONFIG_FILE = os.path.join(WORKBENCH_PATH, 'script', 'aspralign', 'ASPRAlign-config.txt')
 
 # output files
 ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Archaea', '5S-aspralign.csv')
@@ -20,4 +20,3 @@ ASPRALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-result
 NESTEDALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Archaea', '5S-nestedalign.csv')
 NESTEDALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Bacteria', '5S-nestedalign.csv')
 NESTEDALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Eukaryota', '5S-nestedalign.csv')
-
