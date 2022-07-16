@@ -1,29 +1,23 @@
-FROM eclipse-temurin:11-alpine
-RUN apk add --no-cache git python3 build-base perl && \
- wget -O get-pip.py    https://github.com/pypa/get-pip/raw/38e54e5de07c66e875c11a1ebbdb938854625dd8/public/get-pip.py; \
-python3 get-pip.py; \
-rm -f get-pip.py
+FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get -y update; apt-get -y install perl python3 build-essential openjdk-11-jdk git wget unzip
 WORKDIR /gp
 
 #ASPRAlign
 RUN git clone https://github.com/bdslab/aspralign.git; \
-
-#PSTAG
-mkdir pstag && cd pstag; \
-wget http://pstag.dna.bio.keio.ac.jp/download/pstag2_1_2-unix.zip && unzip pstag2_1_2-unix.zip && rm pstag2_1_2-unix.zip; \
-cd pstag2_1_2-unix && chmod +x pstag && cd ../..; \
-
-#MiGaL
-mkdir migal && cd migal; \
-wget http://www-igm.univ-mlv.fr/~allali/logiciels/migal_tgz/migal.tgz && tar -xf migal.tgz && rm migal.tgz; \
-#cd migal-2.2 && make install; \
-cd ..; \
-
-#Gardenia
-wget https://bioinfo.lifl.fr/gardenia/gardenia.zip && unzip gardenia.zip && rm gardenia.zip; \
-
+#ViennaRNA
+wget https://github.com/ViennaRNA/ViennaRNA/releases/download/v2.5.1/ViennaRNA-2.5.1.tar.gz && tar -zxvf ViennaRNA-2.5.1.tar.gz && rm  ViennaRNA-2.5.1.tar.gz;\
+cd ViennaRNA-2.5.1; \
+./configure \
+make \
+make install; \
+cd ..\
 #LocARNA
-git clone https://github.com/s-will/LocARNA
-
-ADD molecolePerTest ./molecolePerTest 
+wget https://github.com/s-will/LocARNA/releases/download/v2.0.0RC10/locarna-2.0.0RC10.tar.gz && tar -xf locarna-2.0.0RC10.tar.gz && rm locarna-2.0.0RC10.tar.gz; \
+cd locarna-2.0.0RC10; \
+./configure; \
+make; \
+make install; \
+cd ..\
+ADD molecolePerTest ./molecolePerTest
 CMD tail -f /dev/null
