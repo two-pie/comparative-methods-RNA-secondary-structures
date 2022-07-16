@@ -1,3 +1,0 @@
-#strand_
-GAUCUGGCAGCCAUAGCGGCAGGUGUAAUCCUGUACCCAUCCCGAACACAGUAGAUAAGCCUGCCCGCGUUCCUUGCCUGUACUGAAGUGUGCGAGCUUCGGGAACUCUGGAUCGUGCCAUAUCAGU
-(((((((((.(....((((((((....(((((((.............))))..)))...)))))).)).(((((((....((((((((..(....)))))))))..))))))).))))))))))...
