@@ -18,10 +18,7 @@ ENV PATH $CONDA_DIR/bin:$PATH
 
 # LocaRNA
 RUN conda update -y conda; \
-    conda install -y -c bioconda locarna
-
-#ViennaRNA
-RUN wget https://github.com/ViennaRNA/ViennaRNA/releases/download/v2.5.1/ViennaRNA-2.5.1.tar.gz && tar -zxvf ViennaRNA-2.5.1.tar.gz && rm ViennaRNA-2.5.1.tar.gz; \
-    cd ViennaRNA-2.5.1 && ./configure && make && make install && cd ..
+    conda install -y -c bioconda locarna; \
+    conda install -c bioconda/label/cf201901 viennarna
 
 ADD workbench ./workbench
