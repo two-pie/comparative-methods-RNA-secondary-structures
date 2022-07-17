@@ -10,8 +10,8 @@ BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH',
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
 
 # ASPRAlign
-ASPRALIGN_WORKBENCH_JAR = os.path.join(WORKBENCH_PATH, 'script', 'aspralign', 'ASPRAlignWorkbench.jar')
-ASPRALIGN_CONFIG_FILE = os.path.join(WORKBENCH_PATH, 'script', 'aspralign', 'ASPRAlign-config.txt')
+ASPRALIGN_WORKBENCH_JAR = os.path.join('gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
+ASPRALIGN_CONFIG_FILE = os.path.join('gp', 'aspralign', 'ASPRAlign-config.txt')
 
 # output files
 ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-aspralign.csv')
