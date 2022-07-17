@@ -14,9 +14,12 @@ ASPRALIGN_WORKBENCH_JAR = os.path.join(WORKBENCH_PATH, 'script', 'aspralign', 'A
 ASPRALIGN_CONFIG_FILE = os.path.join(WORKBENCH_PATH, 'script', 'aspralign', 'ASPRAlign-config.txt')
 
 # output files
-ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Archaea', '5S-aspralign.csv')
-ASPRALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Bacteria', '5S-aspralign.csv')
-ASPRALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Eukaryota', '5S-aspralign.csv')
-NESTEDALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Archaea', '5S-nestedalign.csv')
-NESTEDALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Bacteria', '5S-nestedalign.csv')
-NESTEDALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'benchmark-results', 'Eukaryota', '5S-nestedalign.csv')
+ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-aspralign.csv')
+ASPRALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-aspralign.csv')
+ASPRALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-aspralign.csv')
+NESTEDALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-nestedalign.csv')
+NESTEDALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-nestedalign.csv')
+NESTEDALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-nestedalign.csv')
+RNAFORESTER_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-rnaforester.csv')
+RNAFORESTER_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-rnaforester.csv')
+RNAFORESTER_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-rnaforester.csv')
