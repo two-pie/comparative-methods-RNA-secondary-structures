@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
 import aspralign_workbench
 import nestedalign_workbench
 import rnaforester_workbench
 import rnadistance_workbench
+import locarna_workbench
 from paths import *
 
 if __name__ == '__main__':
@@ -21,3 +21,6 @@ if __name__ == '__main__':
     rnadistance_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
                               [NESTEDALIGN_ARCHAEA_OUTPUT_FILE, NESTEDALIGN_BACTERIA_OUTPUT_FILE,
                                NESTEDALIGN_EUKARYOTA_OUTPUT_FILE])
+
+    locarna_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
+                          [LOCARNA_ARCHAEA_OUTPUT_FILE, LOCARNA_BACTERIA_OUTPUT_FILE, LOCARNA_EUKARYOTA_OUTPUT_FILE])
