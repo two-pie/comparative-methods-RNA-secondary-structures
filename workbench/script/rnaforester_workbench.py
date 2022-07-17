@@ -35,7 +35,9 @@ def __rnaforester(directory, df):
                     distance = distance[:distance.find(' ')]
                 # save the final time
                 final_time = time.time_ns() - initial_time
-                df.loc[len(df)] = [molecule_1, molecule_2, distance,  final_time]
+                df.loc[len(df)] = [molecule_1, molecule_2, distance, final_time]
+    # delete tmp.txt
+    os.remove(WORKBENCH_PATH + '/tmp.txt')
 
 
 def csv(molecules_dirs, output_files):
