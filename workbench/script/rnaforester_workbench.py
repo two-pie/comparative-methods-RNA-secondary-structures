@@ -1,10 +1,13 @@
 import os
 import subprocess
+import time
 
 import pandas as pd
 
+from paths import WORKBENCH_PATH
 
-def __rnaforester(directory):
+
+def __rnaforester(directory, df):
     # list of molecules in the directory
     molecules = sorted(os.listdir(directory))
 
@@ -15,9 +18,24 @@ def __rnaforester(directory):
     for molecule_1, molecule_2 in molecule_pairs:
         with open(os.path.join(directory, molecule_1), 'r') as file_1:
             with open(os.path.join(directory, molecule_2), 'r') as file_2:
+                with open(WORKBENCH_PATH + '/tmp.txt', 'w') as tmp:
+                    tmp.write(file_1.read())
+                    tmp.write('\n' + file_2.read())
+                # save the initial time
+                initial_time = time.time_ns()
                 # run RNAforester workbench and suppress output
-                subprocess.run(['RNAforester', '-d', '-f', file_1, file_2], stdout=subprocess.DEVNULL,
-                               stderr=subprocess.DEVNULL)
+                output = subprocess.run(['RNAforester', '-d', '-f', WORKBENCH_PATH + '/tmp.txt'], capture_output=True)
+                # convert from CompletedProcess to string
+                output = output.stdout.decode('utf-8').strip()
+                # recover distance in substring
+                distance = output[
+                           output.find('global optimal score:') + len('global optimal score: '):].split('\n')[0]
+                # remove spaces from string: example s ***
+                if distance.find(' ') != -1:
+                    distance = distance[:distance.find(' ')]
+                # save the final time
+                final_time = time.time_ns() - initial_time
+                df.loc[len(df)] = [molecule_1, molecule_2, distance,  final_time]
 
 
 def csv(molecules_dirs, output_files):
@@ -27,7 +45,7 @@ def csv(molecules_dirs, output_files):
         df = pd.DataFrame(columns=['Molecule 1', 'Molecule 2', 'Distance', 'Execution time [ns]'])
 
         # fill the dataframe with the data from the nestedalign website
-        __rnaforester(directory)
+        __rnaforester(directory, df)
 
         # save the dataframe as a csv file
         df.to_csv(output, index=False)
