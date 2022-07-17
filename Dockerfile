@@ -22,3 +22,6 @@ RUN conda update -y conda; \
     conda install -c bioconda/label/cf201901 viennarna
 
 ADD workbench ./workbench
+
+# install python modules
+RUN cd /gp/workbench/script && pip install -r requirements.txt
