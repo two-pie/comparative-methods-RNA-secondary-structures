@@ -8,6 +8,10 @@ WORKBENCH_PATH = os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))
 ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Archaea', '5S')
 BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Bacteria', '5S')
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
+# molecule directory for bpseq
+ARCHAEA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq', 'Archaea', '5S')
+BACTERIA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq', 'Bacteria', '5S')
+EUKARYOTA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq', 'Eukaryota', '5S')
 
 # ASPRAlign
 ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
@@ -29,3 +33,7 @@ RNAFORESTER_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-resu
 LOCARNA_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-locarna.csv')
 LOCARNA_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-locarna.csv')
 LOCARNA_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-locarna.csv')
+
+RAG2D_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', 'bpseq-rag2d.txt')
+RAG2D_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', 'bpseq-rag2d.txt')
+RAG2D_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', 'bpseq-rag2d.txt')
