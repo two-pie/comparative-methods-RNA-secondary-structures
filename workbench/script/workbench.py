@@ -3,8 +3,8 @@ import nestedalign_workbench
 import rnaforester_workbench
 import rnadistance_workbench
 import locarna_workbench
-from paths import *
 import rag2d_workbench
+from paths import *
 
 if __name__ == '__main__':
     aspralign_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
