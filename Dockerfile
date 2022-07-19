@@ -1,26 +1,35 @@
-FROM ubuntu:22.04
-ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y update; apt-get -y install perl python3 build-essential openjdk-11-jdk git wget unzip
+FROM eclipse-temurin:11-jammy
 WORKDIR /gp
 
-# ASPRAlign
-RUN git clone https://github.com/bdslab/aspralign.git;
-
-
-# Download and install miniconda
-ENV CONDA_DIR /opt/conda
-RUN  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh && \
-    /bin/bash miniconda.sh -b -p /opt/conda && rm miniconda.sh
+RUN apt-get -y update  \
+    && apt-get -y upgrade; \
+    apt-get -y install python3 git curl; \
+    # Installing google chrome
+    curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+    && apt-get -y install ./google-chrome-stable_current_amd64.deb  \
+    && rm google-chrome-stable_current_amd64.deb; \
+    # ASPRAlign
+    git clone https://github.com/bdslab/aspralign.git; \
+    # Download and install miniconda
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh  \
+    && /bin/bash miniconda.sh -b -p /opt/conda  \
+    && rm miniconda.sh
 
 # Put conda in path
-ENV PATH $CONDA_DIR/bin:$PATH
+ENV PATH /opt/conda/bin:$PATH
 
-# LocaRNA
+# LocaRNA and ViennaRNA
 RUN conda update -y conda; \
     conda install -y -c bioconda locarna; \
-    conda install -c bioconda/label/cf201901 viennarna
+    conda install -y -c bioconda/label/cf201901 viennarna; \
+    # Remove unnecessary packages
+    apt-get -y purge --auto-remove curl git
 
+# This section is just for caching, it will be removed later
+ADD requirements.txt .
+RUN pip install -r requirements.txt  \
+    && rm requirements.txt
 ADD workbench ./workbench
 
-# install python modules
-RUN cd /gp/workbench/script && pip install -r requirements.txt
+
+

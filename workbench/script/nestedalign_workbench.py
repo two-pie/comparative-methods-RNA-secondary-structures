@@ -14,6 +14,9 @@ def __setup_driver():
     # active headless mode
     options.add_argument('--headless')
 
+    # use no sandbox
+    options.add_argument('--no-sandbox')
+
     # suppress console output
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
