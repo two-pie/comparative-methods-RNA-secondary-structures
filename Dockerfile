@@ -27,7 +27,7 @@ RUN conda update -y conda; \
 
 # This section is just for caching, it will be removed later
 ADD requirements.txt .
-RUN pip install -r requirements.txt  \
+RUN pip -q install -r requirements.txt  \
     && rm requirements.txt
 ADD workbench ./workbench
 
