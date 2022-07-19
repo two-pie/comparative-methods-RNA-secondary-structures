@@ -76,6 +76,9 @@ def csv(molecules_dirs, output_files):
     # nagivate to nestedalign website
     driver.get('https://nestedalign.lri.fr/index.php')
 
+    # remove unnecessary blank line created by selenium
+    print("\033[F", end="")
+
     # create a csv file for each directory of molecules
     for directory, output in zip(molecules_dirs, output_files):
         # create a dataframe for the csv file
