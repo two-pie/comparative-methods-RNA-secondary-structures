@@ -30,32 +30,22 @@ def __rag2d(directory, output, driver):
     molecules = sorted(os.listdir(directory))
 
     # iterate over all pairs of molecules
-    for m in molecules:
-        # click on the button to upload file
-        e = driver.find_element(By.XPATH,
-                                '/html/body/div[3]/div/div/div/div[2]/div/div[2]/div/div['
-                                '3]/div/div/div/div/div/div/div/div/form/fieldset/p[1]/input[2]').click()
+    with open(output, 'w') as f:
+        for m in molecules:
+            # upload molecule
+            driver.find_element(By.XPATH, '//*[@id="node-31"]/div/div/div/div/form/fieldset/p[1]/input[2]').send_keys(
+                os.path.join(directory, m))
 
-        # send path file to the website
-        e.send_keys(os.path.join(directory, m))
+            # calculate molecule matrix
+            driver.find_element(By.XPATH,
+                                '//*[@id="node-31"]/div/div/div/div/form/fieldset/p[6]/input[1]').click()
 
-        # click on the button to send file
-        driver.find_element(By.XPATH,
-                            '/html/body/div[3]/div/div/div/div[2]/div/div[2]/div/div['
-                            '3]/div/div/div/div/div/div/div/div/form/fieldset/p[6]/input[1]').click()
+            # write the matrix to the file
+            matrix = driver.find_element(By.XPATH, '//*[@id="node-54"]/div/div/div/div/pre').text
+            f.write(f'{m}\n{matrix}\n\n')
 
-        # get the rna matrix
-        var = driver.find_element(By.XPATH,
-                                  '/html/body/div[3]/div/div/div/div[2]/div/div[2]/div/div['
-                                  '3]/div/div/div/div/div/div/div/div/pre').text
-
-        print('****' + var)
-
-        # save the matrix in outputfile
-        # with open(os.path.join(output), 'w') as file:
-
-        # return to the previous page
-        driver.back()
+            # return to the previous page
+            driver.back()
 
 
 def csv(molecules_dirs, output_files):
@@ -64,6 +54,9 @@ def csv(molecules_dirs, output_files):
 
     # nagivate to nestedalign website
     driver.get('http://www.biomath.nyu.edu/?q=rag/rna_matrix')
+
+    # remove unnecessary blank line created by selenium
+    print("\033[F", end="")
 
     # create a txt file for each file of molecules of all directories
     for directory, output in zip(molecules_dirs, output_files):

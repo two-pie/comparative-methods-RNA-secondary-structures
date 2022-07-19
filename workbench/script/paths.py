@@ -9,9 +9,9 @@ ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 
 BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Bacteria', '5S')
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
 # molecule directory for bpseq
-ARCHAEA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq', 'Archaea', '5S')
-BACTERIA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq', 'Bacteria', '5S')
-EUKARYOTA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq', 'Eukaryota', '5S')
+ARCHAEA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq-nH', 'Archaea', '5S')
+BACTERIA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq-nH', 'Bacteria', '5S')
+EUKARYOTA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq-nH', 'Eukaryota', '5S')
 
 # ASPRAlign
 ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
