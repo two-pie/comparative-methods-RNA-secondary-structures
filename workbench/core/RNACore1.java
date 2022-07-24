@@ -2,8 +2,7 @@ package it.unicam.cs.bdslab.aspralign;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.Objects;
 
 public class RNACore1 {
 
@@ -11,39 +10,32 @@ public class RNACore1 {
     private final List<List<WeakBond>> core;
 
     public RNACore1(RNASecondaryStructure secondaryStructure) {
-        this.secondaryStructure = secondaryStructure;
+        this.secondaryStructure = Objects.requireNonNull(secondaryStructure);
         this.core = new ArrayList<>();
+        this.createStacks();
+    }
 
-
-        var weakbounds = secondaryStructure.getBonds();
+    private void createStacks(){
+        // initialize stack
         var stack = new ArrayList<WeakBond>();
-        int distance = -1;
-        for(var wb : weakbounds) {
-            var isParallel = wb.getRight() - wb.getLeft() == distance;
-            if (stack.size() != 0 && !isParallel) {
+        // store all weak bonds in the secondary structure
+        var bonds = secondaryStructure.getBonds();
+        // expected distance between the members of a weak bond to be defined as parallel,
+        // initialize the distance if there is at least one bond
+        var distance = bonds.size() > 0 ? bonds.get(0).getRight() - bonds.get(0).getLeft() : null;
+        // iterate over all bonds and add them to the respective stack
+        for (var b : bonds) {
+            // if the bond is not parallel, add the current stack to the core and create a new one
+            if (b.getRight() - b.getLeft() != distance) {
                 core.add(stack);
                 stack = new ArrayList<>();
             }
-            stack.add(wb);
-            distance = wb.getRight() - wb.getLeft();
-        }
-        core.add(stack);
-
-       /* for (int i = 0, distance = -1; i < weakbounds.size(); i++, distance += 2) {
-            var wb = weakbounds.get(i);
-            // if the subtraction between the right and left member of a weak bond is equal to the distance then
-            // the weak bond is defined as parallel
-            var isParallel = wb.getRight() - wb.getLeft() == distance;
-            // checks if a new stack is needed
-            if (stack.size() != 0 && !isParallel) {
-                core.add(stack);
-                stack = new ArrayList<>();
-            }
-            stack.add(wb);
-            distance = wb.getRight() - wb.getLeft();
+            stack.add(b);
+            // update the distance for the next bond
+            distance = b.getRight() - b.getLeft() + 2;
         }
         // the last stack is not added inside the loop, so it is added here
-        core.add(stack);*/
+        core.add(stack);
     }
 
     public RNASecondaryStructure getSecondaryStructure() {
@@ -52,9 +44,5 @@ public class RNACore1 {
 
     public List<List<WeakBond>> getCore() {
         return this.core;
-    }
-
-    private void createStack() {
-
     }
 }
