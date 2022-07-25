@@ -15,27 +15,25 @@ public class RNACore1 {
         this.createStacks();
     }
 
-    private void createStacks(){
-        // initialize stack
-        var stack = new ArrayList<WeakBond>();
-        // store all weak bonds in the secondary structure
+    private void createStacks() {
         var bonds = secondaryStructure.getBonds();
-        // expected distance between the members of a weak bond to be defined as parallel,
-        // initialize the distance if there is at least one bond
-        var distance = bonds.size() > 0 ? bonds.get(0).getRight() - bonds.get(0).getLeft() : null;
-        // iterate over all bonds and add them to the respective stack
-        for (var b : bonds) {
-            // if the bond is not parallel, add the current stack to the core and create a new one
-            if (b.getRight() - b.getLeft() != distance) {
-                core.add(stack);
-                stack = new ArrayList<>();
+        if (bonds.size() > 0) {
+            // initialize stack
+            var stack = new ArrayList<WeakBond>();
+            this.core.add(stack);
+            // expected distance between the members of a weak bond to be defined as parallel
+            var distance = bonds.get(0).getRight() - bonds.get(0).getLeft();
+            // group all parallel bonds in the same stack
+            for (var b : bonds) {
+                if (b.getRight() - b.getLeft() != distance) {
+                    stack = new ArrayList<>();
+                    core.add(stack);
+                }
+                stack.add(b);
+                // update the distance for the next bond
+                distance = b.getRight() - b.getLeft() + 2;
             }
-            stack.add(b);
-            // update the distance for the next bond
-            distance = b.getRight() - b.getLeft() + 2;
         }
-        // the last stack is not added inside the loop, so it is added here
-        core.add(stack);
     }
 
     public RNASecondaryStructure getSecondaryStructure() {
