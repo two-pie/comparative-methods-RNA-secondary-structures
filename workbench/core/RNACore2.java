@@ -26,25 +26,17 @@ public class RNACore2 {
 
     private void createStacks(int[] p) {
         var bonds = secondaryStructure.getBonds();
-        if (bonds.size() > 0) {
-            // initialize stack
-            var stack = new ArrayList<WeakBond>();
-            core.add(stack);
-            // last bound encountered
-            var lastBond = bonds.get(0);
-            // the goal is to group all the parallel bonds after eliminating the unpaired nucleotides,
-            // in this case we use two simple conditions that solve this problem
-            for (var b : bonds) {
-                if (!this.isWithin(b, lastBond) || this.isThereBond(b, lastBond, p)) {
-                    stack = new ArrayList<>();
-                    core.add(stack);
-                }
-                stack.add(b);
-                // update the last bond
-                lastBond = b;
-            }
+        // last bound encountered
+        WeakBond lastBond = null;
+        for (var b : bonds) {
+            // the goal is to group all the parallel bonds after eliminating the unpaired nucleotides
+            // (the first condition is met only at the first iteration and serves to initialize the lastBond variable)
+            if (lastBond == null || !this.isWithin(b, lastBond) || this.isThereBond(b, lastBond, p))
+                this.core.add(new ArrayList<>());
+            // add the bond to the last stack
+            core.get(core.size() - 1).add(b);
+            lastBond = b;
         }
-
     }
 
     // determine if the second bond is contained within the first bond
