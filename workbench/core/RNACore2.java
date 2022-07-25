@@ -52,21 +52,21 @@ public class RNACore2 {
 
     // determine if there is another nucleotide between the first and second bond (the second bond must be contained in the first bond)
     private boolean isThereNucleotide(WeakBond wb1, WeakBond wb2, int[] p) {
-        boolean isIntersected = false;
+        boolean isThereNucleotide = false;
         for (int i = wb1.getLeft()+1; i < wb2.getLeft(); i++) {
             if (p[i] !=0) {
-                isIntersected = true;
+                isThereNucleotide = true;
                 break;
             }
         }
-        if (!isIntersected)
+        if (!isThereNucleotide)
             for (int i = wb2.getRight()+1; i < wb1.getRight(); i++) {
                 if (p[i] !=0) {
-                    isIntersected = true;
+                    isThereNucleotide = true;
                     break;
                 }
             }
-        return isIntersected;
+        return isThereNucleotide;
     }
 
     public RNASecondaryStructure getSecondaryStructure() {
