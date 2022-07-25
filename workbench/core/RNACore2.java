@@ -33,7 +33,7 @@ public class RNACore2 {
         // iterate over all bonds and add them to the respective stack
         for (var b : bonds) {
             // determine whether a new stack is needed after eliminating all unpaired nucleotides
-            if (!this.isWithin(b, lastBond) || this.isThereNucleotide(b, lastBond,p)) {
+            if (!this.isWithin(b, lastBond) || this.isThereBond(b, lastBond,p)) {
                 core.add(stack);
                 stack = new ArrayList<>();
             }
@@ -50,23 +50,23 @@ public class RNACore2 {
         return wb2.getLeft() >= wb1.getLeft() || wb2.getRight() <= wb1.getRight();
     }
 
-    // determine if there is another nucleotide between the first and second bond (the second bond must be contained in the first bond)
-    private boolean isThereNucleotide(WeakBond wb1, WeakBond wb2, int[] p) {
-        boolean isThereNucleotide = false;
+    // determine if there is another bond between the first and second bond (the second bond must be contained in the first bond)
+    private boolean isThereBond(WeakBond wb1, WeakBond wb2, int[] p) {
+        boolean isThereBond = false;
         for (int i = wb1.getLeft()+1; i < wb2.getLeft(); i++) {
             if (p[i] !=0) {
-                isThereNucleotide = true;
+                isThereBond = true;
                 break;
             }
         }
-        if (!isThereNucleotide)
+        if (!isThereBond)
             for (int i = wb2.getRight()+1; i < wb1.getRight(); i++) {
                 if (p[i] !=0) {
-                    isThereNucleotide = true;
+                    isThereBond = true;
                     break;
                 }
             }
-        return isThereNucleotide;
+        return isThereBond;
     }
 
     public RNASecondaryStructure getSecondaryStructure() {
