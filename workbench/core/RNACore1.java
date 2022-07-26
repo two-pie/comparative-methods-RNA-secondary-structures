@@ -17,23 +17,17 @@ public class RNACore1 {
 
     private void createStacks() {
         var bonds = secondaryStructure.getBonds();
-        if (bonds.size() > 0) {
-            // initialize stack
-            var stack = new ArrayList<WeakBond>();
-            this.core.add(stack);
-            // expected distance between the members of a weak bond to be defined as parallel
-            var distance = bonds.get(0).getRight() - bonds.get(0).getLeft();
-            // group all parallel bonds in the same stack
-            for (var b : bonds) {
-                if (b.getRight() - b.getLeft() != distance) {
-                    stack = new ArrayList<>();
-                    core.add(stack);
-                }
-                stack.add(b);
-                // update the distance for the next bond
-                distance = b.getRight() - b.getLeft() + 2;
-            }
+        // group all parallel bonds in the same stack
+        for (int i = 0; i < bonds.size(); i++) {
+            if (i == 0 || !this.isParallel(bonds.get(i), bonds.get(i - 1)))
+                this.core.add(new ArrayList<>());
+            // add the bond to the last stack
+            core.get(core.size() - 1).add(bonds.get(i));
         }
+    }
+
+    private boolean isParallel(WeakBond wb1, WeakBond wb2) {
+        return wb1.getLeft() + 1 == wb2.getLeft() && wb1.getRight() - 1 == wb2.getRight();
     }
 
     public RNASecondaryStructure getSecondaryStructure() {
