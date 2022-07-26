@@ -20,8 +20,8 @@ if __name__ == '__main__':
                                RNAFORESTER_EUKARYOTA_OUTPUT_FILE])
 
     rnadistance_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
-                              [NESTEDALIGN_ARCHAEA_OUTPUT_FILE, NESTEDALIGN_BACTERIA_OUTPUT_FILE,
-                               NESTEDALIGN_EUKARYOTA_OUTPUT_FILE])
+                              [RNADISTANCE_ARCHAEA_OUTPUT_FILE, RNADISTANCE_BACTERIA_OUTPUT_FILE,
+                               RNADISTANCE_EUKARYOTA_OUTPUT_FILE])
 
     locarna_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
                           [LOCARNA_ARCHAEA_OUTPUT_FILE, LOCARNA_BACTERIA_OUTPUT_FILE, LOCARNA_EUKARYOTA_OUTPUT_FILE])
