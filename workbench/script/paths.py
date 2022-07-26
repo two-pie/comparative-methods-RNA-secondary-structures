@@ -30,6 +30,10 @@ RNAFORESTER_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-result
 RNAFORESTER_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-rnaforester.csv')
 RNAFORESTER_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-rnaforester.csv')
 
+RNADISTANCE_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-rnadistance.csv')
+RNADISTANCE_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-rnadistance.csv')
+RNADISTANCE_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-rnadistance.csv')
+
 LOCARNA_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-locarna.csv')
 LOCARNA_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-locarna.csv')
 LOCARNA_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-locarna.csv')

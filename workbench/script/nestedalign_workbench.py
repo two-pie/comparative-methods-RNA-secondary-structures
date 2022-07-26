@@ -38,14 +38,14 @@ def __nestedalign(directory, df, driver):
     for molecule_1, molecule_2 in molecule_pairs:
         with open(os.path.join(directory, molecule_1), 'r') as file_1:
             # get the content of the first molecule
-            molecules_1 = file_1.read()
+            content_molecule_1 = file_1.read()
             with open(os.path.join(directory, molecule_2), 'r') as file_2:
                 # get the content of the second molecule
-                molecules_2 = file_2.read()
+                content_molecule_2 = file_2.read()
 
                 # send the content of the two molecules to the website
-                driver.find_element(By.ID, 'arn1').send_keys(f'>{molecule_1}\n{molecules_1}')
-                driver.find_element(By.ID, 'arn2').send_keys(f'>{molecule_2}\n{molecules_2}')
+                driver.find_element(By.ID, 'arn1').send_keys(f'>{molecule_1}\n{content_molecule_1}')
+                driver.find_element(By.ID, 'arn2').send_keys(f'>{molecule_2}\n{content_molecule_2}')
 
                 # save the initial time
                 initial_time = time.time_ns()
