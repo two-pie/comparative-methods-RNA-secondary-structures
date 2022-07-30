@@ -32,7 +32,7 @@ public class RNACore2 {
 
     // determine if the second bond is contained within the first bond
     private boolean isWithin(WeakBond wb1, WeakBond wb2) {
-        return wb2.getLeft() >= wb1.getLeft() || wb2.getRight() <= wb1.getRight();
+        return wb2.getLeft() > wb1.getLeft() && wb2.getRight() < wb1.getRight();
     }
 
     // determine if there is a bond between the first and second bond (the second bond must be contained in the first bond)
