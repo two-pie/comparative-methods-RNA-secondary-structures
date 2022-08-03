@@ -5,7 +5,7 @@ import java.util.*;
 
 public class RNACore2 {
     private final RNASecondaryStructure secondaryStructure;
-    private final List<List<WeakBond>> core;
+    private final List<WeakBond> core;
 
     public RNACore2(RNASecondaryStructure secondaryStructure) {
         this.secondaryStructure = Objects.requireNonNull(secondaryStructure);
@@ -19,13 +19,28 @@ public class RNACore2 {
         // group in the same stack all bonds that are parallel after eliminating unpaired nucleotides
         for (int i = 0; i < bonds.size(); i++) {
             if (i == 0 || !this.isParallelAfterElimination(bonds.get(i), bonds.get(i - 1), p))
-                this.core.add(new ArrayList<>());
-            // add the bond to the last stack
-            core.get(core.size() - 1).add(bonds.get(i));
+                this.addBond(bonds.get(i));
         }
     }
 
-
+    private void addBond(WeakBond newBond) {
+        var leftNewBond = this.core.size() * 2 + 1;
+        var rightNewBond = leftNewBond + 1;
+        var bounds = this.secondaryStructure.getBonds();
+        for (int i = this.core.size() - 1; i >= 0; i--) {
+            var bond = bounds.get(i);
+            var coreBond = this.core.get(i);
+            if (bond.getLeft() > newBond.getLeft()) {
+                leftNewBond = Math.min(leftNewBond, coreBond.getLeft());
+                this.core.set(i, new WeakBond(coreBond.getLeft() + 1, coreBond.getRight() + 1));
+            } else if (bond.getRight() > newBond.getLeft()) {
+                leftNewBond = coreBond.getRight();
+                this.core.set(i, new WeakBond(coreBond.getLeft(), coreBond.getRight() + 1));
+            } else
+                break;
+        }
+        this.core.add(new WeakBond(leftNewBond, rightNewBond));
+    }
     private boolean isParallelAfterElimination(WeakBond wb1, WeakBond wb2, int[] p) {
         return this.isWithin(wb1, wb2) && !this.isThereBond(wb1, wb2, p);
     }
@@ -65,7 +80,7 @@ public class RNACore2 {
         return this.secondaryStructure;
     }
 
-    public List<List<WeakBond>> getCore() {
+    public List<WeakBond> getCore() {
         return this.core;
     }
 
