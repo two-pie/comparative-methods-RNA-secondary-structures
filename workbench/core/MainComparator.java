@@ -20,16 +20,10 @@
  * You should have received a copy of the GNU General Public License
  * along with ASPRAlign. If not, see <http://www.gnu.org/licenses/>.
  */
-package it.unicam.cs.bdslab.aspralign;
-
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Scanner;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * MainComparator class interacting with the user through command line
@@ -40,12 +34,25 @@ import java.util.stream.Stream;
 public class MainComparator {
 
 
-
     public static void main(String[] args) throws IOException {
         var filePaths = Files.walk(FilePaths.Archaea).filter(Files::isRegularFile).collect(Collectors.toList());
         //create a csv file with the header MOLECULE CORE1 CORE2
-        var file =Files.createFile(Paths.get(args[1], "cores.csv"));
-        Files.write(file, "MOLECULE,CORE1,CORE2\n".getBytes());
+        var file = Files.createFile(FilePaths.Archaea_output);
+        Files.write(file, "MOLECULA,CORE1,CORE2\n".getBytes());
+        // read the molecula and calculate the cores
+        filePaths.forEach(f -> {
+            try {
+                var rnaSecondaryStructure = RNASecondaryStructureFileReader.readStructure(f.toString(), false);
+                // get cores
+                RNACore1 core1 = new RNACore1(rnaSecondaryStructure);
+                RNACore2 core2 = new RNACore2(rnaSecondaryStructure);
+                Files.write(file, (f.getFileName() + core1.getBrackets() + "," + core2.getBrackets() + "\n").getBytes());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        });
+
 
     }
 }

@@ -1,4 +1,4 @@
-package it.unicam.cs.bdslab.aspralign;
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
