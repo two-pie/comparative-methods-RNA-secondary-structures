@@ -1,6 +1,6 @@
-package it.unicam.cs.bdslab.aspralign;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class RNACore1 {
 
@@ -10,10 +10,10 @@ public class RNACore1 {
     public RNACore1(RNASecondaryStructure secondaryStructure) {
         this.secondaryStructure = Objects.requireNonNull(secondaryStructure);
         this.core = new ArrayList<>();
-        this.createStacks();
+        this.createCore();
     }
 
-    private void createStacks() {//TODO cambiare nome metodo
+    private void createCore() {
         var bonds = secondaryStructure.getBonds();
         for (int i = 0; i < bonds.size(); i++)
             if (i == 0 || !this.isParallel(bonds.get(i), bonds.get(i - 1)))
@@ -50,5 +50,14 @@ public class RNACore1 {
 
     public List<WeakBond> getCore() {
         return this.core;
+    }
+
+    public String getBrackets() {
+        char[] core = new char[this.core.size() * 2];
+        this.core.forEach(b -> {
+            core[b.getLeft() - 1] = '(';
+            core[b.getRight() - 1] = ')';
+        });
+        return new String(core);
     }
 }

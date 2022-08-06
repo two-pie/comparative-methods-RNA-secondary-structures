@@ -1,6 +1,6 @@
-package it.unicam.cs.bdslab.aspralign;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Objects;
 
 
 public class RNACore2 {
@@ -10,11 +10,11 @@ public class RNACore2 {
     public RNACore2(RNASecondaryStructure secondaryStructure) {
         this.secondaryStructure = Objects.requireNonNull(secondaryStructure);
         this.core = new ArrayList<>();
-        this.createStacks(this.p(secondaryStructure));
+        this.createCore(this.p(secondaryStructure));
 
     }
 
-    private void createStacks(int[] p) {
+    private void createCore(int[] p) {
         var bonds = secondaryStructure.getBonds();
         // group in the same stack all bonds that are parallel after eliminating unpaired nucleotides
         for (int i = 0; i < bonds.size(); i++) {
@@ -41,6 +41,7 @@ public class RNACore2 {
         }
         this.core.add(new WeakBond(leftNewBond, rightNewBond));
     }
+
     private boolean isParallelAfterElimination(WeakBond wb1, WeakBond wb2, int[] p) {
         return this.isWithin(wb1, wb2) && !this.isThereBond(wb1, wb2, p);
     }
@@ -82,6 +83,15 @@ public class RNACore2 {
 
     public List<WeakBond> getCore() {
         return this.core;
+    }
+
+    public String getBrackets() {
+        char[] core = new char[this.core.size() * 2];
+        this.core.forEach(b -> {
+            core[b.getLeft() - 1] = '(';
+            core[b.getRight() - 1] = ')';
+        });
+        return new String(core);
     }
 
 }
