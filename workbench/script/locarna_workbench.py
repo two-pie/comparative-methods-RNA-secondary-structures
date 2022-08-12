@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import time
 import subprocess
 
 
@@ -18,20 +17,13 @@ def csv(molecules_dirs, output_files):
 
         # iterate over all pairs of molecules
         for molecule_1, molecule_2 in molecules_pairs:
-            # save initial time
-            initial_time = time.time_ns()
-
             # align the two molecules with locarna and retrieve the distance
             distance = subprocess.run(
                 ['locarna', os.path.join(directory, molecule_1), os.path.join(directory, molecule_2)],
                 capture_output=True).stdout.decode('utf-8').split('\n')[0][7:]
 
-            # save final time
-            end_time = time.time_ns() - initial_time
-
             # save the data in the dataframe
-            df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], distance,
-                               end_time]
+            df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], distance]
 
         # save the dataframe as a csv file
         df.to_csv(output, index=False)
