@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import os
-import time
 
 
 def __setup_driver():
@@ -47,14 +46,8 @@ def __nestedalign(directory, df, driver):
                 driver.find_element(By.ID, 'arn1').send_keys(f'>{molecule_1}\n{content_molecule_1}')
                 driver.find_element(By.ID, 'arn2').send_keys(f'>{molecule_2}\n{content_molecule_2}')
 
-                # save the initial time
-                initial_time = time.time_ns()
-
                 # click on the button to start the alignment
                 driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[1]').click()
-
-                # save the final time
-                final_time = time.time_ns() - initial_time
 
                 # get the score
                 score = driver.find_element(By.XPATH, "//*[@id='align_score']").text
@@ -66,7 +59,7 @@ def __nestedalign(directory, df, driver):
                 driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[2]').click()
 
                 # save the data in the dataframe
-                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], score, final_time]
+                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], score]
 
 
 def csv(molecules_dirs, output_files):

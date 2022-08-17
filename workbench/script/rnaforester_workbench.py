@@ -1,6 +1,5 @@
 import os
 import subprocess
-import time
 
 import pandas as pd
 
@@ -21,8 +20,6 @@ def __rnaforester(directory, df):
                 with open(WORKBENCH_PATH + '/tmp.txt', 'w') as tmp:
                     tmp.write(file_1.read())
                     tmp.write('\n' + file_2.read())
-                # save the initial time
-                initial_time = time.time_ns()
                 # run RNAforester workbench and suppress output
                 output = subprocess.run(['RNAforester', '-d', '-f', WORKBENCH_PATH + '/tmp.txt'], capture_output=True)
                 # convert from CompletedProcess to string
@@ -33,9 +30,7 @@ def __rnaforester(directory, df):
                 # remove spaces from string: example s ***
                 if distance.find(' ') != -1:
                     distance = distance[:distance.find(' ')]
-                # save the final time
-                final_time = time.time_ns() - initial_time
-                df.loc[len(df)] = [molecule_1, molecule_2, distance, final_time]
+                df.loc[len(df)] = [molecule_1, molecule_2, distance]
     # delete tmp.txt
     os.remove(WORKBENCH_PATH + '/tmp.txt')
 

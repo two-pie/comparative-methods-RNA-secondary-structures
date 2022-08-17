@@ -1,6 +1,5 @@
 import os
 import subprocess
-import time
 import pandas as pd
 
 
@@ -14,14 +13,11 @@ def __rnadistance(directory, df):
             content_molecule_1 = file_1.read()
             with open(os.path.join(directory, molecule_2), 'r') as file_2:
                 content_molecule_2 = file_2.read()
-                stri = f'{content_molecule_1}\n{content_molecule_2}'
                 sp = subprocess.Popen(['RNAdistance'], stdout=subprocess.PIPE,
                                       stdin=subprocess.PIPE)
-                initial_time = time.time_ns()
-                distance = sp.communicate(input=stri.encode('utf-8'))[0].decode('utf-8').strip()[3:]
-                final_time = time.time_ns() - initial_time
-                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], distance,
-                                   final_time]
+                distance = sp.communicate(input=f'{content_molecule_1}\n{content_molecule_2}'.encode('utf-8'))[
+                               0].decode('utf-8').strip()[3:]
+                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], distance]
 
 
 def csv(molecules_dirs, output_files):
