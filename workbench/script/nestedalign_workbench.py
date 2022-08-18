@@ -75,7 +75,7 @@ def csv(molecules_dirs, output_files):
     # create a csv file for each directory of molecules
     for directory, output in zip(molecules_dirs, output_files):
         # create a dataframe for the csv file
-        df = pd.DataFrame(columns=['Molecule 1', 'Molecule 2', 'Distance', 'Execution time [ns]'])
+        df = pd.DataFrame(columns=['Molecule 1', 'Molecule 2', 'Distance'])
 
         # fill the dataframe with the data from the nestedalign website
         __nestedalign(directory, df, driver)
