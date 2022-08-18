@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11-jammy
+FROM eclipse-temurin:17-jammy
 WORKDIR /gp
 
 RUN apt-get -y update  \
