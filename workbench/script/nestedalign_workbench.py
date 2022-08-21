@@ -59,7 +59,7 @@ def __nestedalign(directory, df, driver):
                 driver.find_element(By.XPATH, '//*[@id="comparison_form"]/div/input[2]').click()
 
                 # save the data in the dataframe
-                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], score]
+                df.loc[len(df)] = [molecule_1[:-6], molecule_2[:-6], score]
 
 
 def csv(molecules_dirs, output_files):

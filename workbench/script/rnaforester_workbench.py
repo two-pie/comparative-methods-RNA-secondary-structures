@@ -30,7 +30,7 @@ def __rnaforester(directory, df):
                 # remove spaces from string: example s ***
                 if distance.find(' ') != -1:
                     distance = distance[:distance.find(' ')]
-                df.loc[len(df)] = [molecule_1, molecule_2, distance]
+                df.loc[len(df)] = [molecule_1[:-6], molecule_2[:-6], distance]
     # delete tmp.txt
     os.remove(WORKBENCH_PATH + '/tmp.txt')
 

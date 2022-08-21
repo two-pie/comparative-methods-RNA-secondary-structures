@@ -17,7 +17,7 @@ def __rnadistance(directory, df):
                                       stdin=subprocess.PIPE)
                 distance = sp.communicate(input=f'{content_molecule_1}\n{content_molecule_2}'.encode('utf-8'))[
                                0].decode('utf-8').strip()[3:]
-                df.loc[len(df)] = [os.path.splitext(molecule_1)[0], os.path.splitext(molecule_2)[0], distance]
+                df.loc[len(df)] = [molecule_1[:-6], molecule_2[:-6], distance]
 
 
 def csv(molecules_dirs, output_files):

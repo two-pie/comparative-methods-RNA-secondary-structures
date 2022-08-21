@@ -18,9 +18,8 @@ RUN apt-get -y update  \
 # Put conda in path
 ENV PATH /opt/conda/bin:$PATH
 
-# LocaRNA and ViennaRNA
+# ViennaRNA
 RUN conda update -y conda; \
-    conda install -y -c bioconda locarna; \
     conda install -y -c bioconda/label/cf201901 viennarna; \
     # Remove unnecessary packages
     apt-get -y purge --auto-remove curl git
@@ -30,6 +29,3 @@ ADD requirements.txt .
 RUN pip -q install -r requirements.txt  \
     && rm requirements.txt
 ADD workbench ./workbench
-
-
-
