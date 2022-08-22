@@ -4,14 +4,19 @@ import sys
 # root directory of the workbench
 WORKBENCH_PATH = os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))
 
+# workbench results directory
+WORKBENCH_RESULTS = os.path.join(WORKBENCH_PATH, 'workbench-results')
+WORKBENCH_RESULTS_ARCHAEA = os.path.join(WORKBENCH_RESULTS, 'Archaea')
+WORKBENCH_RESULTS_BACTERIA = os.path.join(WORKBENCH_RESULTS, 'Bacteria')
+WORKBENCH_RESULTS_EUKARYOTA = os.path.join(WORKBENCH_RESULTS, 'Eukaryota')
+
+# core jar
+CORE_JAR = os.path.join(WORKBENCH_PATH, 'core', 'aspralignWithCluster.jar')
+
 # molecule directory
 ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Archaea', '5S')
 BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Bacteria', '5S')
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
-# molecule directory for bpseq
-ARCHAEA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq-nH', 'Archaea', '5S')
-BACTERIA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq-nH', 'Bacteria', '5S')
-EUKARYOTA_DIR_2D = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'bpseq-nH', 'Eukaryota', '5S')
 
 # ASPRAlign
 ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
@@ -34,6 +39,3 @@ RNADISTANCE_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-result
 RNADISTANCE_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-rnadistance.csv')
 RNADISTANCE_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-rnadistance.csv')
 
-LOCARNA_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-locarna.csv')
-LOCARNA_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-locarna.csv')
-LOCARNA_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-locarna.csv')
