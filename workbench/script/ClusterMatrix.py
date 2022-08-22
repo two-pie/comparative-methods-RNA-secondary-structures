@@ -26,15 +26,27 @@ organism_of = dict()
 for i in range(len(molecules)):
     organism_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Organism'].strip()
 
-# Create dictionary Id -> Taxon
-taxon_of = dict()
-for i in range(len(molecules)):
-    taxon_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core1'].strip()
 
-# Create dictionary Id -> Label
-label_of = dict()
-for i in range(len(molecules)):
-    label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core1'].strip()
+if molecules.columns[2] == "Core1":
+    # Create dictionary Id -> Taxon
+    taxon_of = dict()
+    for i in range(len(molecules)):
+        taxon_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core1'].strip()
+
+    # Create dictionary Id -> Label
+    label_of = dict()
+    for i in range(len(molecules)):
+        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core1'].strip()
+else:
+    # Create dictionary Id -> Taxon
+    taxon_of = dict()
+    for i in range(len(molecules)):
+        taxon_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core2'].strip()
+
+    # Create dictionary Id -> Label
+    label_of = dict()
+    for i in range(len(molecules)):
+        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core2'].strip()
 
 # Read the list of distances
 print("Reading", sys.argv[2], "...")
@@ -46,8 +58,8 @@ distance_matrix = np.zeros(s)
 
 # Populate Distance Matrix
 for k in range(len(distances)):
-    i = index_of[distances.loc[k].loc['Molecule 1']]
-    j = index_of[distances.loc[k].loc['Molecule 2']]
+    i = index_of[distances.loc[k].loc['Molecule1']]
+    j = index_of[distances.loc[k].loc['Molecule2']]
     value = distances.loc[k].loc['Distance']
     distance_matrix[i][j] = value
     distance_matrix[j][i] = value

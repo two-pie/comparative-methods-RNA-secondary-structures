@@ -6,14 +6,16 @@ WORKBENCH_PATH = os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))
 
 # workbench results directory
 WORKBENCH_RESULTS = os.path.join(WORKBENCH_PATH, 'workbench-results')
-WORKBENCH_RESULTS_ARCHAEA = os.path.join(WORKBENCH_RESULTS, 'Archaea')
-WORKBENCH_RESULTS_BACTERIA = os.path.join(WORKBENCH_RESULTS, 'Bacteria')
-WORKBENCH_RESULTS_EUKARYOTA = os.path.join(WORKBENCH_RESULTS, 'Eukaryota')
+# cores
+WORKBENCH_RESULTS_ARCHAEA_CORES = os.path.join(WORKBENCH_RESULTS, 'Archaea', 'cores')
+WORKBENCH_RESULTS_BACTERIA_CORES = os.path.join(WORKBENCH_RESULTS, 'Bacteria', 'cores')
+WORKBENCH_RESULTS_EUKARYOTA_CORES = os.path.join(WORKBENCH_RESULTS, 'Eukaryota', 'cores')
+# distances
+WORKBENCH_RESULTS_ARCHAEA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Archaea', 'distances')
+WORKBENCH_RESULTS_BACTERIA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Bacteria', 'distances')
+WORKBENCH_RESULTS_EUKARYOTA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Eukaryota', 'distances')
 
-# core jar
-CORE_JAR = os.path.join(WORKBENCH_PATH, 'core', 'aspralignWithCluster.jar')
-
-# molecule directory
+# molecules directory
 ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Archaea', '5S')
 BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Bacteria', '5S')
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
@@ -21,21 +23,22 @@ EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH'
 # ASPRAlign
 ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
 ASPRALIGN_CONFIG_FILE = os.path.join(os.sep, 'gp', 'aspralign', 'ASPRAlign-config.txt')
+# core aspralign jar for clustering
+CORE_JAR = os.path.join(WORKBENCH_PATH, 'core', 'aspralignWithCluster.jar')
 
-# output files
-ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-aspralign.csv')
-ASPRALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-aspralign.csv')
-ASPRALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-aspralign.csv')
+# distances output files
+ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-aspralign.csv')
+ASPRALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-aspralign.csv')
+ASPRALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-aspralign.csv')
 
-NESTEDALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-nestedalign.csv')
-NESTEDALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-nestedalign.csv')
-NESTEDALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-nestedalign.csv')
+NESTEDALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-nestedalign.csv')
+NESTEDALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-nestedalign.csv')
+NESTEDALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-nestedalign.csv')
 
-RNAFORESTER_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-rnaforester.csv')
-RNAFORESTER_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-rnaforester.csv')
-RNAFORESTER_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-rnaforester.csv')
+RNAFORESTER_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-rnaforester.csv')
+RNAFORESTER_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-rnaforester.csv')
+RNAFORESTER_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-rnaforester.csv')
 
-RNADISTANCE_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Archaea', '5S-rnadistance.csv')
-RNADISTANCE_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Bacteria', '5S-rnadistance.csv')
-RNADISTANCE_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_PATH, 'workbench-results', 'Eukaryota', '5S-rnadistance.csv')
-
+RNADISTANCE_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-rnadistance.csv')
+RNADISTANCE_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-rnadistance.csv')
+RNADISTANCE_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-rnadistance.csv')
