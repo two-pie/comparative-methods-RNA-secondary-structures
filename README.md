@@ -1,5 +1,5 @@
 # comparative-methods-RNA-secondary-structures
-Group Project exam - University of Camerino
+Group Project exam [ST1300] - University of Camerino
 
 Supervisor professors: Luca Tesei, Michela Quadrini
 
