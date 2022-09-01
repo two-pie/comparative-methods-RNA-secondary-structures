@@ -19,7 +19,7 @@ def read_files(cores_folder, distances_folder):
 
 if __name__ == '__main__':
     # Distance calculator
-    '''aspralign_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
+    aspralign_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
                             [ASPRALIGN_ARCHAEA_OUTPUT_FILE, ASPRALIGN_BACTERIA_OUTPUT_FILE,
                              ASPRALIGN_EUKARYOTA_OUTPUT_FILE], ASPRALIGN_WORKBENCH_JAR, ASPRALIGN_CONFIG_FILE)
 
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     rnadistance_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
                               [RNADISTANCE_ARCHAEA_OUTPUT_FILE, RNADISTANCE_BACTERIA_OUTPUT_FILE,
-                               RNADISTANCE_EUKARYOTA_OUTPUT_FILE])'''
+                               RNADISTANCE_EUKARYOTA_OUTPUT_FILE])
     # Core calculator
     subprocess.run(['java', '-jar', CORE_JAR, ARCHAEA_DIR, WORKBENCH_RESULTS_ARCHAEA_CORES, 'archaea'],
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -43,7 +43,6 @@ if __name__ == '__main__':
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
     # Clustering
-    '''molecule_files = os.listdir(WORKBENCH_RESULTS)
+    molecule_files = os.listdir(WORKBENCH_RESULTS)
     for f in molecule_files:
         read_files(os.path.join(WORKBENCH_RESULTS, f, 'cores'), os.path.join(WORKBENCH_RESULTS, f, 'distances'))
-'''
