@@ -16,15 +16,15 @@ WORKBENCH_RESULTS_BACTERIA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Bacteria
 WORKBENCH_RESULTS_EUKARYOTA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Eukaryota', 'distances')
 
 # molecules directory
-ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Archaea', '5S')
-BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Bacteria', '5S')
-EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH', 'Eukaryota', '5S')
+ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db', 'Archaea', '5S')
+BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db', 'Bacteria', '5S')
+EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db', 'Eukaryota', '5S')
 
 # ASPRAlign
 ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
 ASPRALIGN_CONFIG_FILE = os.path.join(os.sep, 'gp', 'aspralign', 'ASPRAlign-config.txt')
 # core aspralign jar for clustering
-CORE_JAR = os.path.join(WORKBENCH_PATH, 'core', 'aspralignWithCluster.jar')
+CORE_JAR = os.path.join(WORKBENCH_PATH, 'core', 'coresCalculator.jar')
 
 # distances output files
 ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-aspralign.csv')
