@@ -1,0 +1,509 @@
+bpRNA ID,Length,Unpaired Bases,Paired Bases,Origin Name,Domain,Organism,Database,Origin URL,Unnamed: 9,RNA Type
+bpRNA_CRW_26417,93,49,44,tRNAs/Asparagine/ECU33333,Bacteria,Escherichia coli W3110,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_CRW_39281,92,50,42,tRNAs/Isoleucine/AY934305,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_CRW_39282,92,50,42,tRNAs/Isoleucine/AY934306,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_CRW_39283,92,50,42,tRNAs/Isoleucine/AY934307,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_CRW_39284,92,50,42,tRNAs/Isoleucine/AY934308,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_CRW_39285,92,50,42,tRNAs/Isoleucine/AY934310,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_CRW_39286,92,50,42,tRNAs/Isoleucine/AY934311,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
+bpRNA_SPR_54,92,52,40,tdbR00000387,Bacteria,Bacillus_subtilis,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000387,,tRNA
+bpRNA_SPR_55,90,48,42,tdbR00000388,Bacteria,Bacillus_subtilis,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000388,,tRNA
+bpRNA_SPR_56,92,50,42,tdbR00000389,Bacteria,Bacillus_subtilis,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000389,,tRNA
+bpRNA_SPR_144,90,50,40,tdbR00000379,"dsDNA viruses, no RNA stage",Enterobacteria_phage_T4,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000379,,tRNA
+bpRNA_SPR_184,92,50,42,tdbR00000568,Bacteria,Escherichia_coli,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000568,,tRNA
+bpRNA_SPR_185,90,50,40,tdbR00000390,Bacteria,Escherichia_coli,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000390,,tRNA
+bpRNA_SPR_186,93,51,42,tdbR00000391,Bacteria,Escherichia_coli,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000391,,tRNA
+bpRNA_SPR_378,90,48,42,tdbR00000384,Bacteria,Mycoplasma_capricolum,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000384,,tRNA
+bpRNA_SPR_379,92,52,40,tdbR00000385,Bacteria,Mycoplasma_capricolum,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000385,,tRNA
+bpRNA_SPR_391,93,53,40,tdbR00000386,Bacteria,Mycoplasma_mycoides,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000386,,tRNA
+bpRNA_SPR_407,90,46,44,tdbR00000550,Eukaryota,Neurospora_crassa,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000550,,tRNA
+bpRNA_SPR_530,90,48,42,tdbR00000396,Eukaryota,Saccharomyces_cerevisiae,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000396,,tRNA
+bpRNA_SPR_531,90,48,42,tdbR00000397,Eukaryota,Saccharomyces_cerevisiae,SPR,http://trna.bioinf.uni-leipzig.de/DataOutput/Result?ID=tdbR00000397,,tRNA
+bpRNA_RFAM_1243,93,53,40,RF00005_AJ400848.1_34280-34188,Eukaryota,Spinacia oleracea (spinach),RFAM,https://en.wikipedia.org/wiki/Transfer_RNA,,tRNA
+bpRNA_RFAM_1596,91,51,40,RF00005_M91385.1_1291-1381,Bacteria,Spiroplasma citri,RFAM,https://en.wikipedia.org/wiki/Transfer_RNA,,tRNA
+bpRNA_RFAM_1683,90,50,40,RF00005_X03154.1_608-697,Bacteria,Mycoplasma mycoides,RFAM,https://en.wikipedia.org/wiki/Transfer_RNA,,tRNA
+bpRNA_RFAM_1699,90,50,40,RF00005_X03715.1_779-868,Bacteria,Spiroplasma melliferum,RFAM,https://en.wikipedia.org/wiki/Transfer_RNA,,tRNA
+bpRNA_RFAM_1789,90,50,40,RF00005_X13994.1_40-129,Bacteria,Escherichia coli,RFAM,https://en.wikipedia.org/wiki/Transfer_RNA,,tRNA
+bpRNA_RFAM_1891,90,50,40,RF00005_X52797.1_114-203,Bacteria,Escherichia coli,RFAM,https://en.wikipedia.org/wiki/Transfer_RNA,,tRNA
+bpRNA_CRW_16034,110,40,70,Bacterial/AY487826_a,Bacteria,Spirochaeta aurantia,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16037,110,40,70,Bacterial/AY599019_b,Bacteria,Spirochaeta aurantia,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16270,98,50,48,Bacterial/CP000112_i,Bacteria,Desulfovibrio desulfuricans G20,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16293,110,40,70,Bacterial/CP000159,Bacteria,Salinibacter ruber,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16299,110,44,66,Bacterial/CP000237_a,Bacteria,Neorickettsia sennetsu str. Miyayama,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16424,97,49,48,Bacterial/CP000440_i,Bacteria,Burkholderia cepacia AMMD,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16603,109,45,64,Bacterial/CU207366_b,Bacteria,Gramella forsetii KT0803,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16604,109,45,64,Bacterial/CU207366_c,Bacteria,Gramella forsetii KT0803,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16605,109,45,64,Bacterial/CU207366_f,Bacteria,Gramella forsetii KT0803,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16613,102,42,60,Bacterial/DQ295241,Bacteria,uncultured marine bacterium Ant39E11,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16617,96,52,44,Bacterial/DQ813266_b,Bacteria,Francisella philomiragia,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16652,92,54,38,Bacterial/Flu.dumoffii,Bacteria,Fluoribacter dumoffii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16662,110,44,66,Bacterial/H.influenzae.HIrrnD,Bacteria,Haemophilus influenzae Rd KW20,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16668,104,46,58,Bacterial/L43967_b,Bacteria,Mycoplasma genitalium G37,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16669,92,54,38,Bacterial/Leg.anisa,Bacteria,Legionella anisa,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16670,92,54,38,Bacterial/Leg.brunensis.1,Bacteria,Legionella brunensis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16671,92,54,38,Bacterial/Leg.brunensis.2,Bacteria,Legionella brunensis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16672,92,54,38,Bacterial/Leg.cherrii,Bacteria,Legionella cherrii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16673,92,54,38,Bacterial/Leg.erythra,Bacteria,Legionella erythra,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16692,109,41,68,Bacterial/NMA1Z2491,Bacteria,Neisseria meningitidis Z2491,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16693,109,41,68,Bacterial/NMA2Z2491_b,Bacteria,Neisseria meningitidis Z2491,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16694,109,41,68,Bacterial/NMA6Z2491,Bacteria,Neisseria meningitidis Z2491,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16695,109,41,68,Bacterial/NMA7Z2491,Bacteria,Neisseria meningitidis Z2491,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16784,108,40,68,Bacterial/U00089_b,Bacteria,Mycoplasma pneumoniae M129,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16829,108,42,66,Bacterial/Wolbachia.sp.1,Bacteria,Wolbachia sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16830,108,42,66,Bacterial/Wolbachia.sp.2,Bacteria,Wolbachia sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16831,108,42,66,Bacterial/Wolbachia.sp.3,Bacteria,Wolbachia sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16832,108,42,66,Bacterial/Wolbachia.sp.4,Bacteria,Wolbachia sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16834,92,54,38,Bacterial/Z30431_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16835,92,54,38,Bacterial/Z30432_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16836,92,54,38,Bacterial/Z30433_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16837,92,54,38,Bacterial/Z30434_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16838,92,54,38,Bacterial/Z30435_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16839,92,54,38,Bacterial/Z30436_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16840,92,54,38,Bacterial/Z30437_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16841,92,54,38,Bacterial/Z30438_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16842,92,54,38,Bacterial/Z30439_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16843,92,54,38,Bacterial/Z30440_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16844,92,54,38,Bacterial/Z30441_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16845,92,54,38,Bacterial/Z30442_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16846,92,54,38,Bacterial/Z30443_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16847,92,54,38,Bacterial/Z30444_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16848,92,54,38,Bacterial/Z30445_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16849,92,54,38,Bacterial/Z30446_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16850,92,54,38,Bacterial/Z30447_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16851,92,54,38,Bacterial/Z30448_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16852,92,54,38,Bacterial/Z30449_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16853,92,54,38,Bacterial/Z30450_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16854,92,54,38,Bacterial/Z30451_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16855,92,54,38,Bacterial/Z30452_a,Bacteria,Legionella cincinnatiensis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16856,92,54,38,Bacterial/Z30453_a,Bacteria,Legionella erythra,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16857,92,54,38,Bacterial/Z30454_a,Bacteria,Legionella feeleii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16858,92,54,38,Bacterial/Z30455_a,Bacteria,Legionella feeleii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16859,92,54,38,Bacterial/Z30456_a,Bacteria,Legionella longbeachae,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16860,92,54,38,Bacterial/Z30457_a,Bacteria,Legionella moravica,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16861,92,54,38,Bacterial/Z30458_a,Bacteria,Legionella rubrilucens,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16862,92,54,38,Bacterial/Z30459_a,Bacteria,Legionella sainthelensi,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16863,92,54,38,Bacterial/Z30460_a,Bacteria,Tatlockia micdadei,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16864,90,54,36,Bacterial/Z30461_a,Bacteria,Tatlockia maceachernii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16865,92,54,38,Bacterial/Z30462_a,Bacteria,Legionella wadsworthii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16866,92,54,38,Bacterial/Z30463_a,Bacteria,Legionella steigerwaltii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16867,92,54,38,Bacterial/Z30464_a,Bacteria,Legionella spiritensis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16868,92,54,38,Bacterial/Z30534_a,Bacteria,Legionella pneumophila,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16869,92,54,38,Bacterial/Z30535_a,Bacteria,Legionella anisa,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16870,92,54,38,Bacterial/Z30537_a,Bacteria,Legionella cherrii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16871,92,54,38,Bacterial/Z30538_a,Bacteria,Fluoribacter dumoffii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16872,92,54,38,Bacterial/Z30539_a,Bacteria,Legionella jordanis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16873,93,55,38,Bacterial/Z30540_a,Bacteria,Legionella oakridgensis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_16874,92,54,38,Bacterial/Z30583_a,Bacteria,Legionella israelensis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17882,91,61,30,Eukaryotic/AB088726,Eukaryota,Aulopus japonicus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17904,105,55,50,Eukaryotic/AB234032_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17905,105,55,50,Eukaryotic/AB234033_a,Eukaryota,Pleurotus fuscus var. ferulae,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17906,105,55,50,Eukaryotic/AB234034_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17908,105,57,48,Eukaryotic/AB234036_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17909,105,55,50,Eukaryotic/AB234037_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17910,105,55,50,Eukaryotic/AB234038_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17911,105,55,50,Eukaryotic/AB234039_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17912,105,55,50,Eukaryotic/AB234040_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17913,105,55,50,Eukaryotic/AB234041_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17914,105,55,50,Eukaryotic/AB234042_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17915,105,55,50,Eukaryotic/AB234043_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17917,105,55,50,Eukaryotic/AB234045_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17918,105,55,50,Eukaryotic/AB234046_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17919,105,55,50,Eukaryotic/AB234047_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17920,105,55,50,Eukaryotic/AB234048_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17921,105,55,50,Eukaryotic/AB234049_a,Eukaryota,Pleurotus eryngii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17926,90,60,30,Eukaryotic/AC006001,Eukaryota,Homo sapiens,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17927,92,62,30,Eukaryotic/AC006976,Eukaryota,Homo sapiens,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_17940,90,60,30,Eukaryotic/AC106873,Eukaryota,Homo sapiens,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18147,96,70,26,Eukaryotic/AF243336,Eukaryota,Phytomonas sp. isolate Asclcuvz,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18149,94,68,26,Eukaryotic/AF243337,Eukaryota,Phytomonas sp. isolate Bergbr,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18151,96,70,26,Eukaryotic/AF243338,Eukaryota,Phytomonas sp. isolate EM1,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18153,96,70,26,Eukaryotic/AF243339,Eukaryota,Phytomonas sp. isolate Ehigu,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18155,92,66,26,Eukaryotic/AF243340,Eukaryota,Phytomonas sp. isolate Ehiind,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18157,96,70,26,Eukaryotic/AF243341,Eukaryota,Phytomonas sp. isolate Ehise,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18159,93,67,26,Eukaryotic/AF243342,Eukaryota,Phytomonas sp. isolate Ehisu,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18161,96,70,26,Eukaryotic/AF243343,Eukaryota,Phytomonas sp. isolate Ehivz,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18163,96,70,26,Eukaryotic/AF243344,Eukaryota,Phytomonas sp. isolate Ehygu,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18165,96,70,26,Eukaryotic/AF243345,Eukaryota,Phytomonas sp. isolate Hart1,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18168,96,70,26,Eukaryotic/AF243346,Eukaryota,Phytomonas sp. isolate Hart11,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18170,96,70,26,Eukaryotic/AF243347,Eukaryota,Phytomonas sp. isolate Hart13,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18173,96,70,26,Eukaryotic/AF243348,Eukaryota,Phytomonas sp. isolate Hart2,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18176,96,70,26,Eukaryotic/AF243349,Eukaryota,Phytomonas sp. isolate Hart22,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18178,96,70,26,Eukaryotic/AF243350,Eukaryota,Phytomonas sp. isolate Hart3,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18180,97,71,26,Eukaryotic/AF243351,Eukaryota,Phytomonas sp. isolate Limape,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18182,93,67,26,Eukaryotic/AF243352,Eukaryota,Phytomonas sp. isolate Mandscbr,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18184,93,67,26,Eukaryotic/AF243353,Eukaryota,Phytomonas sp. isolate Mangsp,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18186,93,67,26,Eukaryotic/AF243354,Eukaryota,Phytomonas sp. isolate Manibr,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18188,96,70,26,Eukaryotic/AF243355,Eukaryota,Phytomonas sp. isolate Mar1,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18191,96,70,26,Eukaryotic/AF243356,Eukaryota,Phytomonas sp. isolate Mar3,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18194,97,71,26,Eukaryotic/AF243357,Eukaryota,Phytomonas sp. isolate Mar7,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18196,93,67,26,Eukaryotic/AF243358,Eukaryota,Phytomonas sp. isolate Tomsp,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18202,92,60,32,Eukaryotic/AF497479,Eukaryota,Perkinsus marinus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18387,110,36,74,Eukaryotic/AJ744959,Eukaryota,Acipenser naccarii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18388,110,36,74,Eukaryotic/AJ744960,Eukaryota,Acipenser naccarii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18392,110,36,74,Eukaryotic/AJ744964,Eukaryota,Acipenser naccarii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18393,110,36,74,Eukaryotic/AJ744965,Eukaryota,Acipenser naccarii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18394,110,36,74,Eukaryotic/AJ744966,Eukaryota,Acipenser naccarii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18538,97,57,40,Eukaryotic/AM260689,Eukaryota,Oedalechilus labeo,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18539,97,57,40,Eukaryotic/AM260690,Eukaryota,Liza saliens,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18540,97,57,40,Eukaryotic/AM260691,Eukaryota,Liza ramada,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18541,97,57,40,Eukaryotic/AM260692,Eukaryota,Chelon labrosus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18542,97,57,40,Eukaryotic/AM260693,Eukaryota,Chelon labrosus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18543,97,57,40,Eukaryotic/AM260694,Eukaryota,Liza aurata,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18544,97,57,40,Eukaryotic/AM260695,Eukaryota,Mugil cephalus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18545,97,57,40,Eukaryotic/AM260696,Eukaryota,Mugil cephalus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18566,98,54,44,Eukaryotic/Ascb.immersus.4,Eukaryota,Ascobolus immersus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18670,102,56,46,Eukaryotic/AY129422,Eukaryota,Arabidopsis thaliana,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18683,102,56,46,Eukaryotic/AY130618,Eukaryota,Arabidopsis thaliana,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18701,98,58,40,Eukaryotic/AY302496,Eukaryota,Aphanius fasciatus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18702,98,58,40,Eukaryotic/AY302497,Eukaryota,Aphanius fasciatus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18703,98,58,40,Eukaryotic/AY302498,Eukaryota,Aphanius fasciatus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18720,106,52,54,Eukaryotic/AY313664,Eukaryota,Triticum turgidum subsp. dicoccoides,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18836,91,59,32,Eukaryotic/AY499177,Eukaryota,Pisum sativum,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18838,91,59,32,Eukaryotic/AY499178,Eukaryota,Pisum sativum,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18862,97,57,40,Eukaryotic/AY695111,Eukaryota,Liza ramada,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18880,92,54,38,Eukaryotic/AY839839,Eukaryota,Inonotus linteus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_18881,92,54,38,Eukaryotic/AY839840,Eukaryota,Inonotus linteus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19044,108,52,56,Eukaryotic/AY943280,Eukaryota,Eimeria acervulina,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19047,107,53,54,Eukaryotic/AY943283,Eukaryota,Eimeria mitis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19145,92,58,34,Eukaryotic/DOU58720,Eukaryota,Drosophila obscura,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19219,105,57,48,Eukaryotic/DQ115515,Eukaryota,Candida tropicalis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19220,105,57,48,Eukaryotic/DQ115516,Eukaryota,Candida glabrata,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19221,105,57,48,Eukaryotic/DQ115517,Eukaryota,Metschnikowia pulcherrima,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19222,105,57,48,Eukaryotic/DQ115518,Eukaryota,Kluyveromyces marxianus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19223,105,57,48,Eukaryotic/DQ115519,Eukaryota,Issatchenkia orientalis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19224,105,57,48,Eukaryotic/DQ115520,Eukaryota,Debaryomyces hansenii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19225,105,57,48,Eukaryotic/DQ115521,Eukaryota,Pichia guilliermondii,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19226,105,57,48,Eukaryotic/DQ115522,Eukaryota,Candida rugosa,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19227,105,57,48,Eukaryotic/DQ115523,Eukaryota,Candida parapsilosis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19228,105,57,48,Eukaryotic/DQ115524,Eukaryota,Candida albicans,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19353,97,57,40,Eukaryotic/DQ534549,Eukaryota,Oncorhynchus kisutch,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19356,99,59,40,Eukaryotic/DQ659260,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19358,99,59,40,Eukaryotic/DQ659261,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19360,99,59,40,Eukaryotic/DQ659262,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19362,99,59,40,Eukaryotic/DQ659263,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19364,99,59,40,Eukaryotic/DQ659264,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19366,99,59,40,Eukaryotic/DQ659265,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19368,99,59,40,Eukaryotic/DQ659266,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19370,99,59,40,Eukaryotic/DQ659267,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19372,99,59,40,Eukaryotic/DQ659268,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19374,99,59,40,Eukaryotic/DQ659269,Eukaryota,Carassius auratus gibelio,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19376,99,59,40,Eukaryotic/DQ659270,Eukaryota,Carassius auratus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19378,99,59,40,Eukaryotic/DQ659271,Eukaryota,Carassius auratus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19380,99,59,40,Eukaryotic/DQ659272,Eukaryota,Carassius auratus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19382,99,59,40,Eukaryotic/DQ659273,Eukaryota,Carassius auratus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19384,99,59,40,Eukaryotic/DQ659274,Eukaryota,Carassius auratus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19386,99,59,40,Eukaryotic/DQ659275,Eukaryota,Carassius auratus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19388,97,57,40,Eukaryotic/DQ780572,,,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19390,97,57,40,Eukaryotic/DQ780573,,,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19392,97,57,40,Eukaryotic/DQ780574,,,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19394,97,57,40,Eukaryotic/DQ780575,,,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19396,97,57,40,Eukaryotic/DQ780576,,,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19650,94,64,30,Eukaryotic/EF121360,Eukaryota,Nelumbo nucifera,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19714,108,52,56,Eukaryotic/Gall.gallus,Eukaryota,Gallus gallus,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19851,90,60,30,Eukaryotic/Nos.bombycis.02,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19852,90,60,30,Eukaryotic/Nos.bombycis.03,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19853,90,60,30,Eukaryotic/Nos.bombycis.04,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19854,90,60,30,Eukaryotic/Nos.bombycis.05,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19855,90,60,30,Eukaryotic/Nos.bombycis.06,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19856,90,60,30,Eukaryotic/Nos.bombycis.07,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19857,90,60,30,Eukaryotic/Nos.bombycis.08,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19858,90,60,30,Eukaryotic/Nos.bombycis.09,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19859,90,60,30,Eukaryotic/Nos.bombycis.10,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19860,90,60,30,Eukaryotic/Nos.bombycis.11,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19861,90,60,30,Eukaryotic/Nos.bombycis.12,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19862,90,60,30,Eukaryotic/Nos.bombycis.13,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19863,90,60,30,Eukaryotic/Nos.bombycis.14,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19864,90,60,30,Eukaryotic/Nos.bombycis.15,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19865,90,60,30,Eukaryotic/Nos.bombycis.16,Eukaryota,Nosema bombycis,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_19996,106,48,58,Eukaryotic/SCJ226017,Eukaryota,Solanum circaeifolium,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,5S
+bpRNA_CRW_55469,107,41,66,d.5.b.M.capricolum,Bacteria,Mycoplasma capricolum,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/Structure/index.php,,5S
+bpRNA_RFAM_12,105,43,62,RF00001_AF036708.1_19036-19140,Bacteria,Mycoplasma gallisepticum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_13,107,45,62,RF00001_AF051554.1_130-236,Bacteria,Wolbachia endosymbiont of Encarsia formosa,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_14,107,45,62,RF00001_AF051555.1_130-236,Bacteria,Wolbachia endosymbiont of Trichogramma deion,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_33,100,40,60,RF00001_AF237320.1_326-425,Eukaryota,Hordeum euclaston,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_37,104,42,62,RF00001_AF272626.1_2982-3085,Bacteria,Ureaplasma urealyticum serovar 10,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_49,101,45,56,RF00001_AF516427.1_370-470,Eukaryota,Hordeum secalinum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_51,99,37,62,RF00001_AF516460.1_348-446,Eukaryota,Hordeum muticum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_52,104,46,58,RF00001_AF516462.1_347-450,Eukaryota,Hordeum muticum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_82,104,42,62,RF00001_AJ508600.1_161-58,Eukaryota,Homo sapiens (human),RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_86,109,47,62,RF00001_AJ744985.1_1-109,Eukaryota,Acipenser sturio,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_93,110,48,62,RF00001_AY034723.1_387-496,Eukaryota,Hordeum cordobense,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_94,108,50,58,RF00001_AY034724.1_369-476,Eukaryota,Hordeum cordobense,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_95,101,45,56,RF00001_AY034752.1_354-454,Eukaryota,Hordeum brachyantherum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_102,108,46,62,RF00001_AY544260.1_513-620,Eukaryota,Hordeum patagonicum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_103,107,45,62,RF00001_AY544262.1_351-457,Eukaryota,Hordeum patagonicum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_106,107,49,58,RF00001_AY544351.1_286-392,Eukaryota,Hordeum patagonicum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_107,91,35,56,RF00001_AY544430.1_375-465,Eukaryota,Hordeum erectifolium,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_111,104,42,62,RF00001_AY544517.1_371-474,Eukaryota,Hordeum pubiflorum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_116,109,47,62,RF00001_AY599019.1_4972-5080,Bacteria,Spirochaeta aurantia,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_162,109,47,62,RF00001_DQ867109.1_245-353,Eukaryota,Erpetoichthys calabaricus (reedfish),RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_163,109,47,62,RF00001_DQ867109.1_483-591,Eukaryota,Erpetoichthys calabaricus (reedfish),RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_164,106,44,62,RF00001_EF064607.1_193-298,Eukaryota,Avena barbata,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_166,105,47,58,RF00001_EF175853.1_1-105,Eukaryota,Chrysanthemum zawadskii subsp. latilobum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_175,110,52,58,RF00001_J01893.1_5-114,Eukaryota,Tetrahymena thermophila,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_199,105,43,62,RF00001_L08897.1_5770-5874,Bacteria,Mycoplasma gallisepticum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_279,109,47,62,RF00001_M29167.1_1-109,Bacteria,Mycoplasma sp.,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_281,100,48,52,RF00001_M30199.1_68-167,Bacteria,Mycoplasma hyopneumoniae,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_291,109,53,56,RF00001_M33892.1_2-110,Bacteria,Chlorobium phaeobacteroides,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_292,110,52,58,RF00001_M33893.1_2-111,Bacteria,Chlorobium limicola,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_293,108,46,62,RF00001_M33894.1_2-109,Bacteria,Prosthecochloris aestuarii,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_296,103,49,54,RF00001_M34759.1_7-109,Bacteria,Methylomicrobium agile,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_304,96,48,48,RF00001_M34769.1_10-105,Bacteria,Hyphomicrobium sp.,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_314,108,46,62,RF00001_M35164.1_2-109,Bacteria,Blastopirellula marina,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_315,109,47,62,RF00001_M35165.1_2-110,Bacteria,Pirellula sp.,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_316,109,47,62,RF00001_M35166.1_2-110,Bacteria,Pirellula sp.,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_317,110,50,60,RF00001_M35167.1_2-111,Bacteria,Planctomyces limnophilus,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_318,109,47,62,RF00001_M35168.1_2-110,Bacteria,Planctomyces brasiliensis,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_319,108,44,64,RF00001_M35169.1_2-109,Bacteria,Isosphaera pallida,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_320,107,49,58,RF00001_M35170.1_2-108,Bacteria,Gemmata obscuriglobus,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_363,108,54,54,RF00001_M58387.1_5-112,Eukaryota,Kabatiella microsticta,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_388,100,48,52,RF00001_U01070.1_190-289,Bacteria,Mycoplasma flocculare,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_395,108,46,62,RF00001_U62086.1_19-126,Eukaryota,Kengyilia alatavica,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_398,107,47,60,RF00001_V00646.1_1-107,Bacteria,Mycoplasma capricolum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_492,104,50,54,RF00001_X02242.1_7-110,Bacteria,Vibrio harveyi,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_535,110,50,60,RF00001_X05081.1_5-114,Bacteria,Legionella pneumophila,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_554,107,43,64,RF00001_X06098.1_1-107,Bacteria,Spiroplasma melliferum,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_555,107,47,60,RF00001_X06099.1_1-107,Bacteria,Mycoplasma mycoides,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_579,107,53,54,RF00001_X06854.1_5-111,Eukaryota,Bjerkandera adusta,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_650,110,44,66,RF00001_X57791.1_153-262,Bacteria,Borrelia burgdorferi (Lyme disease spirochete),RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_670,104,58,46,RF00001_X72588.1_6990-7093,Archaea,Halococcus morrhuae,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_683,108,50,58,RF00001_Z11820.1_5-112,Bacteria,Bacillus methanolicus,RFAM,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,,5S
+bpRNA_RFAM_4642,98,60,38,RF00029_AF243383.1_10225-10322,Bacteria,Lactococcus lactis subsp. lactis,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4652,94,56,38,RF00029_AJ277126.1_35792-35885,Eukaryota,Pylaiella littoralis,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4664,95,57,38,RF00029_EF165030.1_2861-2955,Bacteria,Bacillus sp. EA1,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4669,95,57,38,RF00029_M36911.1_2445-2539,Eukaryota,Podospora anserina,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4674,98,60,38,RF00029_M81726.1_5191-5288,Eukaryota,Oenothera berteroana,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4680,91,53,38,RF00029_V00694.1_5204-5294,Eukaryota,Saccharomyces cerevisiae (baker s yeast),RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4686,104,66,38,RF00029_X04336.1_3210-3313,Eukaryota,Podospora anserina,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4695,91,53,38,RF00029_X57546.1_2817-2907,Eukaryota,Kluyveromyces lactis,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4707,110,72,38,RF00029_Y08501.2_169475-169584,Eukaryota,Arabidopsis thaliana (thale cress),RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4716,96,58,38,RF00029_Z69899.1_2926-3021,Eukaryota,Podospora comata,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_4717,91,53,38,RF00029_Z72500.1_3161-3251,Eukaryota,Pylaiella littoralis,RFAM,https://en.wikipedia.org/wiki/Group_II_intron,,Introni Gruppo II
+bpRNA_RFAM_5770,99,43,56,RF00059_AACY022101973.1_389-487,unclassified sequences,marine metagenome,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5771,106,50,56,RF00059_AAEK01000033.1_47712-47817,Bacteria,Bacillus cereus G9241,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5772,100,44,56,RF00059_AALV01000001.1_1015631-1015532,Bacteria,Sulfitobacter sp. EE-36,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5773,101,45,56,RF00059_AALZ01000004.1_372786-372686,Bacteria,Sulfitobacter sp. NAS-14.1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5774,109,53,56,RF00059_AAMD01000032.1_31845-31737,Bacteria,Stigmatella aurantiaca DW4/3-1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5775,103,47,56,RF00059_AARF01000324.1_6363-6261,Bacteria,Paenibacillus larvae subsp. larvae BRL-230010,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5778,91,47,44,RF00059_AB087258.1_15478-15568,Bacteria,Histophilus somni,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5779,104,60,44,RF00059_AB118748.1_319-422,Eukaryota,Aspergillus oryzae,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5780,109,53,56,RF00059_ABCF01000004.1_41916-42024,Bacteria,Bacillus sp. SG-1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5784,104,60,44,RF00059_AE004439.1_1459568-1459465,Bacteria,Pasteurella multocida subsp. multocida str. Pm70,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5785,93,49,44,RF00059_AE004439.1_444121-444213,Bacteria,Pasteurella multocida subsp. multocida str. Pm70,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5786,99,45,54,RF00059_AE007317.1_646024-645926,Bacteria,Streptococcus pneumoniae R6,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5788,103,47,56,RF00059_AE007870.2_312774-312876,Bacteria,Agrobacterium tumefaciens str. C58,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5789,103,47,56,RF00059_AE008691.1_1524796-1524694,Bacteria,Thermoanaerobacter tengcongensis MB4,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5790,103,47,56,RF00059_AE008691.1_1681524-1681422,Bacteria,Thermoanaerobacter tengcongensis MB4,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5791,103,47,56,RF00059_AE008691.1_2140374-2140272,Bacteria,Thermoanaerobacter tengcongensis MB4,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5792,104,48,56,RF00059_AE008691.1_2399659-2399556,Bacteria,Thermoanaerobacter tengcongensis MB4,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5793,97,45,52,RF00059_AE014074.1_464992-464896,Bacteria,Streptococcus pyogenes MGAS315,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5794,110,54,56,RF00059_AE015929.1_2101479-2101588,Bacteria,Staphylococcus epidermidis ATCC 12228,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5795,102,46,56,RF00059_AE017180.1_640928-640827,Bacteria,Geobacter sulfurreducens PCA,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5796,110,54,56,RF00059_AE017221.1_302202-302311,Bacteria,Thermus thermophilus HB27,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5798,103,47,56,RF00059_AF070520.1_2088-2190,Bacteria,Sinorhizobium meliloti,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5800,98,46,52,RF00059_AF109218.1_4405-4502,Bacteria,Staphylococcus carnosus,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5801,92,44,48,RF00059_AF159589.1_4059-4150,Bacteria,Lactobacillus casei,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5802,94,50,44,RF00059_AF217503.1_595-688,Eukaryota,Aspergillus oryzae,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5805,102,50,52,RF00059_AF269570.1_1830-1729,Bacteria,Staphylococcus epidermidis,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5806,99,43,56,RF00059_AF269819.1_1816-1718,Bacteria,Staphylococcus epidermidis,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5809,98,54,44,RF00059_AK119882.1_1-98,Eukaryota,Oryza sativa Japonica Group,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5810,110,66,44,RF00059_AK120238.1_2075-2184,Eukaryota,Oryza sativa Japonica Group,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5811,109,53,56,RF00059_AL009126.3_1242262-1242370,Bacteria,Bacillus subtilis subsp. subtilis str. 168,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5812,102,46,56,RF00059_AL009126.3_1607367-1607468,Bacteria,Bacillus subtilis subsp. subtilis str. 168,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5813,102,50,52,RF00059_AL009126.3_3179105-3179206,Bacteria,Bacillus subtilis subsp. subtilis str. 168,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5814,107,53,54,RF00059_AL445064.1_126097-125991,Archaea,Thermoplasma acidophilum,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5815,108,52,56,RF00059_AL445066.1_239884-239777,Archaea,Thermoplasma acidophilum,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5819,106,54,52,RF00059_AL596164.1_123476-123581,Bacteria,Listeria innocua,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5821,100,56,44,RF00059_AL627265.1_128216-128117,Bacteria,Salmonella enterica subsp. enterica serovar Typhi,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5823,99,45,54,RF00059_AL766847.1_75304-75206,Bacteria,Streptococcus agalactiae NEM316,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5824,90,46,44,RF00059_AL766847.1_94269-94358,Bacteria,Streptococcus agalactiae NEM316,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5825,94,50,44,RF00059_AL935263.2_202700-202607,Bacteria,Lactobacillus plantarum WCFS1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5826,106,54,52,RF00059_AL935263.2_99249-99354,Bacteria,Lactobacillus plantarum WCFS1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5828,106,52,54,RF00059_AL939124.1_163164-163269,Bacteria,Streptomyces coelicolor,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5829,98,54,44,RF00059_AM039952.1_4100743-4100646,Bacteria,Xanthomonas euvesicatoria,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5830,100,44,56,RF00059_AP006627.1_829775-829676,Bacteria,Bacillus clausii KSM-K16,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5831,103,51,52,RF00059_AP006716.1_943397-943499,Bacteria,Staphylococcus haemolyticus JCSC1435,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5832,99,43,56,RF00059_AP008934.1_816596-816694,Bacteria,Staphylococcus saprophyticus subsp. saprophyticus ,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5835,103,47,56,RF00059_AY316746.1_2276-2378,Bacteria,Sinorhizobium fredii NGR234,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5836,108,52,56,RF00059_BA000043.1_643262-643369,Bacteria,Geobacillus kaustophilus HTA426,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5840,99,55,44,RF00059_BX548174.1_1543261-1543163,Bacteria,Prochlorococcus marinus subsp. pastoris str. CCMP1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5841,104,60,44,RF00059_BX548175.1_178356-178459,Bacteria,Prochlorococcus marinus str. MIT 9313,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5842,109,65,44,RF00059_BX569689.1_134905-135013,Bacteria,Synechococcus sp. WH 8102,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5844,105,61,44,RF00059_BX571861.1_7126-7022,Bacteria,Photorhabdus luminescens subsp. laumondii TTO1,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5849,97,53,44,RF00059_BX842649.1_277414-277318,Bacteria,Bdellovibrio bacteriovorus HD100,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5850,108,64,44,RF00059_BX927152.1_148798-148691,Bacteria,Corynebacterium glutamicum ATCC 13032,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5851,109,53,56,RF00059_CP000002.3_1271349-1271457,Bacteria,Bacillus licheniformis ATCC 14580,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5852,99,55,44,RF00059_CP000050.1_1019813-1019911,Bacteria,Xanthomonas campestris pv. campestris str. 8004,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5853,105,49,56,RF00059_CP000058.1_628566-628670,Bacteria,Pseudomonas syringae pv. phaseolicola 1448A,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5854,105,49,56,RF00059_CP000076.1_627657-627761,Bacteria,Pseudomonas fluorescens Pf-5,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5855,90,46,44,RF00059_CP000114.1_913402-913491,Bacteria,Streptococcus agalactiae A909,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5856,108,52,56,RF00059_CP000141.1_198028-198135,Bacteria,Carboxydothermus hydrogenoformans Z-2901,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5857,100,56,44,RF00059_CP000425.1_327513-327414,Bacteria,Lactococcus lactis subsp. cremoris SK11,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5858,104,48,56,RF00059_CP000489.1_34903-34800,Bacteria,Paracoccus denitrificans PD1222,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5859,100,44,56,RF00059_CP000510.1_2895423-2895324,Bacteria,Psychromonas ingrahamii 37,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5860,108,52,56,RF00059_CP000557.1_594796-594903,Bacteria,Geobacillus thermodenitrificans NG80-2,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5861,106,50,56,RF00059_CP000568.1_733772-733877,Bacteria,Clostridium thermocellum ATCC 27405,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5863,106,50,56,RF00059_CP000764.1_2008349-2008244,Bacteria,Bacillus cytotoxicus NVH 391-98,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5865,104,48,56,RF00059_CP000830.1_937748-937645,Bacteria,Dinoroseobacter shibae DFL 12,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5869,107,51,56,RF00059_CP001488.1_228163-228057,Bacteria,Brucella melitensis ATCC 23457,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5871,107,51,56,RF00059_CT573326.1_5282526-5282420,Bacteria,Pseudomonas entomophila L48,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5873,97,59,38,RF00059_M33642.1_428-524,Eukaryota,Nectria haematococca,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5874,109,53,56,RF00059_M73546.1_221-329,Bacteria,Bacillus subtilis,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5875,104,48,56,RF00059_U64312.1_2271-2374,Bacteria,Bacillus firmus,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5876,96,52,44,RF00059_U81371.1_247-152,Bacteria,Bacillus methanolicus,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5877,102,52,50,RF00059_X54035.1_52-153,Bacteria,Bacillus subtilis,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_5878,108,52,56,RF00059_Z82044.1_19193-19300,Bacteria,Bacillus subtilis,RFAM,https://en.wikipedia.org/wiki/TPP_riboswitch,,TPP
+bpRNA_RFAM_8676,98,32,66,RF00169_ABXF01000041.1_51954-51857,Bacteria,Rhodobacterales bacterium Y4I,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8680,100,34,66,RF00169_ACIS01000002.1_252560-252659,Bacteria,Lutiella nitroferrum 2002,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8681,99,33,66,RF00169_AE000511.1_16758-16660,Bacteria,Helicobacter pylori 26695,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8682,100,34,66,RF00169_AE000513.1_2231152-2231251,Bacteria,Deinococcus radiodurans R1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8684,90,26,64,RF00169_AE000520.1_24335-24246,Bacteria,Treponema pallidum subsp. pallidum str. Nichols,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8685,91,33,58,RF00169_AE000657.1_1303771-1303861,Bacteria,Aquifex aeolicus VF5,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8686,98,34,64,RF00169_AE000783.1_482312-482409,Bacteria,Borrelia burgdorferi B31,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8687,102,36,66,RF00169_AE001273.1_286645-286544,Bacteria,Chlamydia trachomatis D/UW-3/CX,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8688,104,40,64,RF00169_AE001363.1_447418-447315,Bacteria,Chlamydophila pneumoniae CWL029,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8689,99,33,66,RF00169_AE001439.1_16900-16802,Bacteria,Helicobacter pylori J99,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8690,102,36,66,RF00169_AE002160.2_636783-636682,Bacteria,Chlamydia muridarum Nigg,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8691,104,40,64,RF00169_AE002161.1_393779-393882,Bacteria,Chlamydophila pneumoniae AR39,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8692,98,32,66,RF00169_AE004092.1_190327-190424,Bacteria,Streptococcus pyogenes M1 GAS,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8693,92,26,66,RF00169_AE004969.1_870846-870755,Bacteria,Neisseria gonorrhoeae FA 1090,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8697,100,34,66,RF00169_AE007869.2_101545-101446,Bacteria,Agrobacterium tumefaciens str. C58,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8698,95,35,60,RF00169_AE008692.2_868927-869021,Bacteria,Zymomonas mobilis subsp. mobilis ZM4,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8699,98,32,66,RF00169_AE009442.1_397674-397771,Bacteria,Xylella fastidiosa Temecula1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8702,97,35,62,RF00169_AE009951.2_799407-799503,Bacteria,Fusobacterium nucleatum subsp. nucleatum ATCC 2558,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8703,98,32,66,RF00169_AE009952.1_1179172-1179269,Bacteria,Yersinia pestis KIM 10,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8704,99,33,66,RF00169_AE013218.1_532210-532112,Bacteria,Buchnera aphidicola str. Sg (Schizaphis graminum),RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8705,98,32,66,RF00169_AE014073.1_412788-412885,Bacteria,Shigella flexneri 2a str. 2457T,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8708,91,29,62,RF00169_AE014295.3_1448227-1448137,Bacteria,Bifidobacterium longum NCC2705,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8709,102,38,64,RF00169_AE015925.1_446183-446284,Bacteria,Chlamydophila caviae GPIC,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8710,97,31,66,RF00169_AE016795.3_3219836-3219740,Bacteria,Vibrio vulnificus CMCP6,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8712,100,34,66,RF00169_AE016825.1_2560853-2560754,Bacteria,Chromobacterium violaceum ATCC 12472,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8713,103,37,66,RF00169_AE016826.1_499549-499447,Bacteria,Buchnera aphidicola str. Bp (Baizongia pistaciae),RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8715,98,32,66,RF00169_AE017126.1_1287985-1287888,Bacteria,Prochlorococcus marinus subsp. marinus str. CCMP13,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8716,98,32,66,RF00169_AE017143.1_1086371-1086274,Bacteria,Haemophilus ducreyi 35000HP,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8718,99,35,64,RF00169_AE017197.1_1090177-1090275,Bacteria,Rickettsia typhi str. Wilmington,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8719,97,39,58,RF00169_AE017198.1_467637-467733,Bacteria,Lactobacillus johnsonii NCC 533,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8720,102,36,66,RF00169_AE017221.1_1448447-1448346,Bacteria,Thermus thermophilus HB27,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8721,100,34,66,RF00169_AE017226.1_250687-250588,Bacteria,Treponema denticola ATCC 35405,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8724,92,30,62,RF00169_AE017283.1_252387-252478,Bacteria,Propionibacterium acnes KPA171202,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8728,98,32,66,RF00169_AE017340.1_1992283-1992186,Bacteria,Idiomarina loihiensis L2TR,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8729,100,34,66,RF00169_AF132127.1_653-752,Bacteria,Streptococcus mutans,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8731,92,26,66,RF00169_AF482014.1_12-103,Bacteria,Neisseria gonorrhoeae,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8732,91,41,50,RF00169_AF496545.1_292-382,Bacteria,Lactobacillus delbrueckii subsp. lactis,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8733,98,32,66,RF00169_AJ011025.1_3479-3382,Bacteria,Prochlorococcus sp.,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8737,99,33,66,RF00169_AL111168.1_66646-66744,Bacteria,Campylobacter jejuni subsp. jejuni NCTC 11168,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8738,94,28,66,RF00169_AL157959.1_1147858-1147765,Bacteria,Neisseria meningitidis Z2491,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8739,98,32,66,RF00169_AL590842.1_3498558-3498461,Bacteria,Yersinia pestis CO92,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8742,100,34,66,RF00169_AL954747.1_470386-470485,Bacteria,Nitrosomonas europaea ATCC 19718,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8743,98,32,66,RF00169_AM233362.1_1648565-1648468,Bacteria,Francisella tularensis subsp. holarctica LVS,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8744,100,34,66,RF00169_AM236080.1_166490-166391,Bacteria,Rhizobium leguminosarum bv. viciae 3841,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8745,99,33,66,RF00169_AM260522.1_1471714-1471812,Bacteria,Helicobacter acinonychis str. Sheeba,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8746,98,32,66,RF00169_AM286280.1_1762567-1762664,Bacteria,Francisella tularensis subsp. tularensis FSC198,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8747,90,24,66,RF00169_AM286690.1_2023249-2023160,Bacteria,Alcanivorax borkumensis SK2,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8753,102,36,66,RF00169_AM884176.1_605097-604996,Bacteria,Chlamydia trachomatis 434/Bu,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8754,98,32,66,RF00169_AM920689.1_3831058-3830961,Bacteria,Xanthomonas campestris pv. campestris,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8757,102,36,66,RF00169_AP008226.1_1771741-1771640,Bacteria,Thermus thermophilus HB8,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8758,98,32,66,RF00169_AP008229.1_1053059-1052962,Bacteria,Xanthomonas oryzae pv. oryzae MAFF 311018,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8760,98,34,64,RF00169_AP009153.1_1324702-1324799,Bacteria,Gemmatimonas aurantiaca T-27,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8764,97,35,62,RF00169_BA000003.2_531036-530940,Bacteria,Buchnera aphidicola str. APS (Acyrthosiphon pisum),RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8765,98,32,66,RF00169_BA000019.2_1368751-1368654,Bacteria,Nostoc sp. PCC 7120,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8766,98,32,66,RF00169_BA000021.3_607419-607516,Bacteria,Wigglesworthia glossinidia endosymbiont of Glossin,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8767,94,28,66,RF00169_BA000022.2_1832234-1832327,Bacteria,Synechocystis sp. PCC 6803,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8770,98,34,64,RF00169_BA000034.2_177239-177336,Bacteria,Streptococcus pyogenes SSI-1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8771,90,28,62,RF00169_BA000035.2_220057-220146,Bacteria,Corynebacterium efficiens YS-314,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8772,94,32,62,RF00169_BA000036.3_256434-256527,Bacteria,Corynebacterium glutamicum ATCC 13032,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8773,98,32,66,RF00169_BA000039.2_216057-215960,Bacteria,Thermosynechococcus elongatus BP-1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8774,99,33,66,RF00169_BA000045.2_3486103-3486201,Bacteria,Gloeobacter violaceus PCC 7421,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8775,91,29,62,RF00169_BX248354.1_219358-219448,Bacteria,Corynebacterium diphtheriae,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8778,93,29,64,RF00169_BX294144.1_110361-110269,Bacteria,Rhodopirellula baltica SH 1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8780,97,31,66,RF00169_BX548175.1_365281-365377,Bacteria,Prochlorococcus marinus str. MIT 9313,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8781,97,31,66,RF00169_BX569693.1_191291-191195,Bacteria,Synechococcus sp. WH 8102,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8782,99,33,66,RF00169_BX571662.1_289282-289380,Bacteria,Wolinella succinogenes,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8783,97,31,66,RF00169_BX897699.1_309928-309832,Bacteria,Bartonella henselae,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8784,97,31,66,RF00169_BX897700.1_281770-281674,Bacteria,Bartonella quintana str. Toulouse,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8785,102,36,66,RF00169_BX908798.1_871974-872075,Bacteria,Candidatus Protochlamydia amoebophila UWE25,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8789,96,30,66,RF00169_CP000010.1_1421960-1421865,Bacteria,Burkholderia mallei ATCC 23344,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8790,98,34,64,RF00169_CP000013.1_484623-484720,Bacteria,Borrelia garinii PBi,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8792,98,32,66,RF00169_CP000020.2_1087907-1087810,Bacteria,Vibrio fischeri ES114,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8794,99,33,66,RF00169_CP000025.1_65635-65733,Bacteria,Campylobacter jejuni RM1221,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8795,90,28,62,RF00169_CP000030.1_1132360-1132271,Bacteria,Anaplasma marginale str. St. Maries,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8796,98,32,66,RF00169_CP000031.1_3754765-3754862,Bacteria,Ruegeria pomeroyi DSS-3,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8797,101,35,66,RF00169_CP000033.3_351328-351428,Bacteria,Lactobacillus acidophilus NCFM,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8798,98,32,66,RF00169_CP000050.1_3890129-3890032,Bacteria,Xanthomonas campestris pv. campestris str. 8004,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8799,95,31,64,RF00169_CP000053.1_1454209-1454303,Bacteria,Rickettsia felis URRWXCal2,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8800,100,34,66,RF00169_CP000057.2_1257882-1257981,Bacteria,Haemophilus influenzae 86-028NP,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8801,98,32,66,RF00169_CP000058.1_2086711-2086808,Bacteria,Pseudomonas syringae pv. phaseolicola 1448A,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8802,98,32,66,RF00169_CP000075.1_2101610-2101707,Bacteria,Pseudomonas syringae pv. syringae B728a,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8803,98,32,66,RF00169_CP000076.1_2115321-2115418,Bacteria,Pseudomonas fluorescens Pf-5,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8804,98,32,66,RF00169_CP000082.1_1173790-1173887,Bacteria,Psychrobacter arcticus 273-4,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8805,98,32,66,RF00169_CP000083.1_3925773-3925676,Bacteria,Colwellia psychrerythraea 34H,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8806,96,30,66,RF00169_CP000086.1_2494952-2495047,Bacteria,Burkholderia thailandensis E264,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8807,98,32,66,RF00169_CP000088.1_57486-57389,Bacteria,Thermobifida fusca YX,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8808,100,34,66,RF00169_CP000089.1_875842-875941,Bacteria,Dechloromonas aromatica RCB,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8809,100,34,66,RF00169_CP000090.1_2325066-2325165,Bacteria,Ralstonia eutropha JMP134,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8810,97,31,66,RF00169_CP000097.1_1495241-1495145,Bacteria,Synechococcus sp. CC9902,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8811,98,36,62,RF00169_CP000100.1_2447996-2447899,Bacteria,Synechococcus elongatus PCC 7942,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8812,98,32,66,RF00169_CP000107.1_1309520-1309617,Bacteria,Ehrlichia canis str. Jake,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8814,96,30,66,RF00169_CP000116.1_544561-544656,Bacteria,Thiobacillus denitrificans ATCC 25259,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8815,98,32,66,RF00169_CP000117.1_5535760-5535663,Bacteria,Anabaena variabilis ATCC 29413,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8817,96,30,66,RF00169_CP000124.1_2648069-2647974,Bacteria,Burkholderia pseudomallei 1710b,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8818,100,34,66,RF00169_CP000133.1_138356-138257,Bacteria,Rhizobium etli CFN 42,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8822,99,33,66,RF00169_CP000241.1_18047-17949,Bacteria,Helicobacter pylori HPAG1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8824,98,32,66,RF00169_CP000259.1_197535-197632,Bacteria,Streptococcus pyogenes MGAS9429,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8825,98,32,66,RF00169_CP000260.1_196467-196564,Bacteria,Streptococcus pyogenes MGAS10270,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8826,98,32,66,RF00169_CP000261.1_198467-198564,Bacteria,Streptococcus pyogenes MGAS2096,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8829,95,29,66,RF00169_CP000284.1_1685091-1685185,Bacteria,Methylobacillus flagellatus KT,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8831,91,29,62,RF00169_CP000304.1_2745928-2745838,Bacteria,Pseudomonas stutzeri A1501,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8832,95,29,66,RF00169_CP000323.1_1769428-1769334,Bacteria,Psychrobacter cryohalolentis K5,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8834,100,34,66,RF00169_CP000352.1_2315225-2315324,Bacteria,Cupriavidus metallidurans CH34,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8851,98,32,66,RF00169_CP000437.1_1648080-1647983,Bacteria,Francisella tularensis subsp. holarctica OSU18,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8852,98,32,66,RF00169_CP000439.1_1640051-1639954,Bacteria,Francisella novicida U112,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8854,99,33,66,RF00169_CP000444.1_3004720-3004622,Bacteria,Shewanella sp. MR-7,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8857,99,33,66,RF00169_CP000450.1_597363-597461,Bacteria,Nitrosomonas eutropha C91,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8858,90,26,64,RF00169_CP000454.1_596081-595992,Bacteria,Arthrobacter sp. FB24,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8861,103,37,66,RF00169_CP000479.1_372508-372610,Bacteria,Mycobacterium avium 104,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8868,96,30,66,RF00169_CP000546.1_41822-41917,Bacteria,Burkholderia mallei NCTC 10229,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8869,96,30,66,RF00169_CP000548.1_1119282-1119187,Bacteria,Burkholderia mallei NCTC 10247,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8871,97,31,66,RF00169_CP000554.1_1756425-1756329,Bacteria,Prochlorococcus marinus str. MIT 9303,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8872,96,30,66,RF00169_CP000570.1_2200688-2200593,Bacteria,Burkholderia pseudomallei 668,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8874,90,34,56,RF00169_CP000605.1_1473939-1473850,Bacteria,Bifidobacterium longum DJO10A,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8875,98,32,66,RF00169_CP000608.1_274577-274480,Bacteria,Francisella tularensis subsp. tularensis WY96-3418,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8878,100,34,66,RF00169_CP000671.1_1242908-1242809,Bacteria,Haemophilus influenzae PittEE,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8881,98,32,66,RF00169_CP000712.1_1786696-1786793,Bacteria,Pseudomonas putida F1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8882,90,26,64,RF00169_CP000713.1_2031919-2031830,Bacteria,Psychrobacter sp. PRwf-1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8883,91,31,60,RF00169_CP000717.1_4181284-4181194,Bacteria,Mycobacterium tuberculosis F11,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8884,98,32,66,RF00169_CP000720.1_3460787-3460690,Bacteria,Yersinia pseudotuberculosis IP 31758,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8885,101,35,66,RF00169_CP000738.1_3636444-3636544,Bacteria,Sinorhizobium medicae WSM419,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8887,91,27,64,RF00169_CP000767.1_6837-6747,Bacteria,Campylobacter curvus 525.92,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8888,96,36,60,RF00169_CP000805.1_24333-24238,Bacteria,Treponema pallidum subsp. pallidum SS14,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8890,98,32,66,RF00169_CP000829.1_194709-194806,Bacteria,Streptococcus pyogenes NZ131,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8892,97,33,64,RF00169_CP000887.1_40749-40653,Bacteria,Brucella abortus S19,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8896,98,32,66,RF00169_CP000941.1_393879-393976,Bacteria,Xylella fastidiosa M12,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8902,98,32,66,RF00169_CP001048.1_1157694-1157791,Bacteria,Yersinia pseudotuberculosis PB1/+,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8903,92,26,66,RF00169_CP001050.1_743127-743218,Bacteria,Neisseria gonorrhoeae NCCP11945,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8904,100,34,66,RF00169_CP001068.1_1100816-1100717,Bacteria,Ralstonia pickettii 12J,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8905,99,33,66,RF00169_CP001072.2_16512-16414,Bacteria,Helicobacter pylori Shi470,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8906,100,34,66,RF00169_CP001074.1_179393-179294,Bacteria,Rhizobium etli CIAT 652,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8907,98,32,66,RF00169_CP001127.1_532559-532656,Bacteria,Salmonella enterica subsp. enterica serovar Schwar,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8908,98,32,66,RF00169_CP001138.1_505976-506073,Bacteria,Salmonella enterica subsp. enterica serovar Agona ,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8909,99,33,66,RF00169_CP001173.1_16513-16415,Bacteria,Helicobacter pylori G27,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8911,100,34,66,RF00169_CP001191.1_4254584-4254485,Bacteria,Rhizobium leguminosarum bv. trifolii WSM2304,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8912,98,36,62,RF00169_CP001196.1_3502877-3502780,Bacteria,Oligotropha carboxidovorans OM5,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8913,98,34,64,RF00169_CP001205.1_478407-478504,Bacteria,Borrelia burgdorferi ZS7,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8914,97,31,66,RF00169_CP001217.1_16624-16528,Bacteria,Helicobacter pylori P12,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8918,92,26,66,RF00169_CP002420.1_1285149-1285240,Bacteria,Neisseria meningitidis H44/76,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8919,99,33,66,RF00169_CR522870.1_1597467-1597369,Bacteria,Desulfotalea psychrophila LSv54,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8920,102,38,64,RF00169_CR848038.1_439144-439245,Bacteria,Chlamydophila abortus S26/3,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8921,96,38,58,RF00169_CR931997.1_2353027-2352932,Bacteria,Corynebacterium jeikeium K411,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8922,91,41,50,RF00169_CR954253.1_1408037-1407947,Bacteria,Lactobacillus delbrueckii subsp. bulgaricus ATCC 1,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8924,97,35,62,RF00169_CU234118.1_808247-808343,Bacteria,Bradyrhizobium sp. ORS 278,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8925,97,31,66,RF00169_CU633749.1_2046219-2046315,Bacteria,Cupriavidus taiwanensis,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8927,98,32,66,RF00169_FM180568.1_436931-437028,Bacteria,Escherichia coli O127:H6 str. E2348/69,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8928,92,30,62,RF00169_JN638551.1_118-27,Bacteria,Mycobacterium tuberculosis H37Rv,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8929,96,36,60,RF00169_M31831.1_60-155,Bacteria,Micrococcus luteus,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8930,96,34,62,RF00169_U00089.2_463960-463865,Bacteria,Mycoplasma pneumoniae M129,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8931,98,32,66,RF00169_U00096.2_475680-475777,Bacteria,Escherichia coli str. K-12 substr. MG1655,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8933,93,33,60,RF00169_U22036.1_387-479,Bacteria,Caulobacter vibrioides,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8934,98,32,66,RF00169_X01074.1_170-267,Bacteria,Escherichia coli,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8935,102,36,66,RF00169_X12643.1_106-207,Bacteria,Thermus thermophilus,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,Bacterial_Small_SRP
+bpRNA_RFAM_8936,98,32,66,RF00169_X14404.1_127-224,Bacteria,Pseudomonas aeruginosa,RFAM,https://en.wikipedia.org/wiki/Signal_recognition_particle_RNA,,
