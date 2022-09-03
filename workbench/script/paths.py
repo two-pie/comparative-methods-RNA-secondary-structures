@@ -19,6 +19,9 @@ WORKBENCH_RESULTS_EUKARYOTA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Eukaryo
 ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db', 'Archaea', '5S')
 BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db', 'Bacteria', '5S')
 EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db', 'Eukaryota', '5S')
+BPSEQFILES = os.path.join(WORKBENCH_PATH, 'DatasetFunctional', 'BPSeqFiles')
+CTFILES = os.path.join(WORKBENCH_PATH, 'DatasetFunctional', 'CTFiles')
+DBNFILES = os.path.join(WORKBENCH_PATH, 'DatasetFunctional', 'DBNFiles')
 
 # ASPRAlign
 ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
