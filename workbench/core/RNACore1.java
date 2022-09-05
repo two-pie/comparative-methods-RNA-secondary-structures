@@ -1,7 +1,7 @@
+package it.unicam.cs.bsdlab.aspralign;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class RNACore1 {
 
@@ -18,28 +18,8 @@ public class RNACore1 {
         var bonds = secondaryStructure.getBonds();
         for (int i = 0; i < bonds.size(); i++)
             if (i == 0 || !this.isParallel(bonds.get(i), bonds.get(i - 1)))
-                this.addBond(bonds.get(i));
+                this.core.add(bonds.get(i));
     }
-
-
-    private void addBond(WeakBond newBond) {
-        var leftNewBond = this.core.size() * 2 + 1;
-        var rightNewBond = leftNewBond + 1;
-        var bounds = this.secondaryStructure.getBonds();
-        for (int i = this.core.size() - 1; i >= 0; i--) {
-            var bond = bounds.get(i);
-            if (bond.getLeft() > newBond.getLeft()) {
-                leftNewBond = Math.min(leftNewBond, this.core.get(i).getLeft());
-                this.core.set(i, new WeakBond(this.core.get(i).getLeft() + 1, this.core.get(i).getRight() + 1));
-            } else if (bond.getRight() > newBond.getLeft()) {
-                leftNewBond = this.core.get(i).getRight();
-                this.core.set(i, new WeakBond(this.core.get(i).getLeft(), this.core.get(i).getRight() + 1));
-            } else
-                break;
-        }
-        this.core.add(new WeakBond(leftNewBond, rightNewBond));
-    }
-
 
     private boolean isParallel(WeakBond wb1, WeakBond wb2) {
         return wb1.getLeft() + 1 == wb2.getLeft() && wb1.getRight() - 1 == wb2.getRight();
@@ -54,11 +34,16 @@ public class RNACore1 {
     }
 
     public String getBrackets() {
-        char[] core = new char[this.core.size() * 2];
-        this.core.forEach(b -> {
-            core[b.getLeft() - 1] = '(';
-            core[b.getRight() - 1] = ')';
-        });
-        return new String(core);
+        SortedMap<Integer, Character> left = new TreeMap<>();
+        this.core.forEach(b -> left.put(b.getLeft(), '('));
+        SortedMap<Integer, Character> right = new TreeMap<>();
+        this.core.forEach(b -> right.put(b.getRight(), ')'));
+        SortedMap<Integer, Character> all = new TreeMap<>();
+        all.putAll(left);
+        all.putAll(right);
+        StringBuilder sb = new StringBuilder();
+        all.values().forEach(sb::append);
+        return sb.toString();
     }
+
 }
