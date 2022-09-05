@@ -15,8 +15,11 @@ def __rnaforester(directory, df):
     # use list comprehension to get all pairs of molecules
     molecule_pairs = [(molecule_1, molecule_2) for i, molecule_1 in enumerate(molecules, start=1) for molecule_2 in
                       molecules[i:]]
+    i = 1
     # iterate over all pairs of molecules
     for molecule_1, molecule_2 in molecule_pairs:
+        print(f'{i}/{len(molecule_pairs)}')
+        i += 1
         with open(os.path.join(directory, molecule_1), 'r') as file_1:
             with open(os.path.join(directory, molecule_2), 'r') as file_2:
                 with open(local_dir_path + '/tmp.txt', 'w') as tmp:

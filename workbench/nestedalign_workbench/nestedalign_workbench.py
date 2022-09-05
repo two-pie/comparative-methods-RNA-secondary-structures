@@ -39,7 +39,7 @@ def __nestedalign(directory, df, driver):
     # iterate over all pairs of molecules
     for molecule_1, molecule_2 in molecule_pairs:
         print(f'{i}/{len(molecule_pairs)}')
-        i += 1 #TODO
+        i += 1
         with open(os.path.join(directory, molecule_1), 'r') as file_1:
             # get the content of the first molecule
             content_molecule_1 = file_1.read()

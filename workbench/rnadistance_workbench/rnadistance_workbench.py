@@ -10,7 +10,10 @@ def __rnadistance(directory, df):
     molecules = sorted(os.listdir(directory))
     molecule_pairs = [(molecule_1, molecule_2) for i, molecule_1 in enumerate(molecules, start=1) for molecule_2 in
                       molecules[i:]]
+    i = 1
     for molecule_1, molecule_2 in molecule_pairs:
+        print(f'{i}/{len(molecule_pairs)}')
+        i += 1
         with open(os.path.join(directory, molecule_1), 'r') as file_1:
             # get the content of the first molecule
             content_molecule_1 = file_1.read()
