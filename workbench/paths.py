@@ -12,6 +12,7 @@ DB_Archaea_90_110_allType = os.path.join(WORKBENCH_PATH, 'datasets', 'Archaea-90
 DBNFiles = os.path.join(DB_Archaea_90_110_allType, 'DBNFiles')
 DBNFilesNH = os.path.join(DB_Archaea_90_110_allType, 'DBNFilesNH')
 CTFiles = os.path.join(DB_Archaea_90_110_allType, 'CTFiles')
+CTFilesNH = os.path.join(DB_Archaea_90_110_allType, 'CTFilesNH')
 
 # Molecules-pseudoknotfree
 ARCHAEA_DIR = os.path.join('Archaea', '5S')
@@ -39,7 +40,6 @@ result_AT_rnadistance = os.path.join(result_Archaea_90_110_allType, 'rnadistance
 result_AT_rnaforester = os.path.join(result_Archaea_90_110_allType, 'rnaforester.csv')
 
 Molecules_pseudoknotfree = os.path.join(workbench_results, 'Molecules-pseudoknotfree')
-result_Molecules_pseudoknotfree = os.path.join(workbench_results, 'Archaea-90-110-allType')
 result_MP_aspralign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'aspralign.csv')
 result_MP_dualgraph_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'dualgraph.csv')
 result_MP_nestedalign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'nestedalign.csv')
