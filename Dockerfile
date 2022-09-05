@@ -25,5 +25,12 @@ ADD requirements.txt .
 RUN sudo pip -q install -r requirements.txt  \
     && rm requirements.txt
 ADD workbench ./workbench
-
-# set tools as paths
+RUN sudo chmod -R 777 /home/matlab/Documents/MATLAB/gp
+RUN mkdir symlinks  \
+    && cd symlinks
+RUN ln -s /home/matlab/Documents/MATLAB/gp/workbench/aspralign_workbench/aspralign_workbench.py aspralign_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/dualgraph_workbench/dualgraph_workbench.py dualgraph_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/nestedalign_workbench/nestedalign_workbench.py nestedalign_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool
+RUN echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
