@@ -11,6 +11,7 @@ import pandas as pd
 
 
 def create_matrices(molecules_dir, output_file_csv):
+    current_dir = os.getcwd()
     molecules = sorted(os.listdir(molecules_dir))
     # paths
     local_directory_path = os.path.dirname(os.path.realpath(sys.argv[0]))
@@ -23,6 +24,8 @@ def create_matrices(molecules_dir, output_file_csv):
     matlab_script = os.path.join(local_directory_path, 'features_computation', 'FeaturesComputationDoBenchmark.m')
     if not (os.path.isabs(output_file_csv)):
         output_file_csv = os.path.join(Path.cwd(), output_file_csv)
+    # change dir
+    os.chdir(local_directory_path)
     # make tmp dirs
     os.makedirs(no_extracted_matrix_path)
     os.makedirs(extracted_matrices_path)
@@ -45,6 +48,7 @@ def create_matrices(molecules_dir, output_file_csv):
     result_df = pd.read_csv(output_file_csv)
     result_df['Molecule'] = molecules_df['Molecule']
     result_df.to_csv(output_file_csv, index=False)
+    os.chdir(current_dir)
 
 
 def extract_matrices(no_extracted_matrices_path, output_dir, jar_path):
