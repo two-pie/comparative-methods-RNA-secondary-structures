@@ -19,8 +19,9 @@ def calculate_core1(molecules_dir, organism_file, output_file):
     molecules = sorted(os.listdir(molecules_dir))
 
     for molecule in molecules:
-        core1 = subprocess.run(['java', '-jar', 'core1', CORE_JAR_PATH, os.path.join(molecules_dir, molecule)],
+        core1 = subprocess.run(['java', '-jar', CORE_JAR_PATH, '-core1', os.path.join(molecules_dir, molecule)],
                                capture_output=True)
+        print(core1)
         # search the organism of a molecule
         organism_name = organism_df.loc[organism_df['Id'] == molecule.split('.')[0]]['Organism'].values[0]
         df.loc[len(df)] = [molecule.split('.')[0], organism_name, core1]
