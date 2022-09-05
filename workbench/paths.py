@@ -2,46 +2,58 @@ import os
 import sys
 
 # root directory of the workbench
-WORKBENCH_PATH = os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))
+WORKBENCH_PATH = os.path.dirname(os.path.realpath(sys.argv[0]))
 
 # workbench results directory
-WORKBENCH_RESULTS = os.path.join(WORKBENCH_PATH, 'workbench-results')
-# cores
-WORKBENCH_RESULTS_ARCHAEA_CORES = os.path.join(WORKBENCH_RESULTS, 'Archaea', 'cores')
-WORKBENCH_RESULTS_BACTERIA_CORES = os.path.join(WORKBENCH_RESULTS, 'Bacteria', 'cores')
-WORKBENCH_RESULTS_EUKARYOTA_CORES = os.path.join(WORKBENCH_RESULTS, 'Eukaryota', 'cores')
-# distances
-WORKBENCH_RESULTS_ARCHAEA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Archaea', 'distances')
-WORKBENCH_RESULTS_BACTERIA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Bacteria', 'distances')
-WORKBENCH_RESULTS_EUKARYOTA_DISTANCES = os.path.join(WORKBENCH_RESULTS, 'Eukaryota', 'distances')
+WORKBENCH_RESULTS = os.path.join(WORKBENCH_PATH, 'workbench_results')
 
-# molecules directory
-ARCHAEA_DIR = os.path.join(WORKBENCH_PATH, 'datasets/Molecules-pseudoknotfree', 'db', 'Archaea', '5S')
-BACTERIA_DIR = os.path.join(WORKBENCH_PATH, 'datasets/Molecules-pseudoknotfree', 'db', 'Bacteria', '5S')
-EUKARYOTA_DIR = os.path.join(WORKBENCH_PATH, 'datasets/Molecules-pseudoknotfree', 'db', 'Eukaryota', '5S')
-BPSEQFILES = os.path.join(WORKBENCH_PATH, 'datasets/DatasetFunctional', 'BPSeqFiles')
-CTFILES = os.path.join(WORKBENCH_PATH, 'datasets/DatasetFunctional', 'CTFiles')
-DBNFILES = os.path.join(WORKBENCH_PATH, 'datasets/DatasetFunctional', 'DBNFiles')
+# Archaea-90-110-allType
+DB_Archaea_90_110_allType = os.path.join(WORKBENCH_PATH, 'datasets', 'Archaea-90-110-allType')
+DBNFiles = os.path.join(DB_Archaea_90_110_allType, 'DBNFiles')
+DBNFilesNH = os.path.join(DB_Archaea_90_110_allType, 'DBNFilesNH')
+CTFiles = os.path.join(DB_Archaea_90_110_allType, 'CTFiles')
 
-# ASPRAlign
-ASPRALIGN_WORKBENCH_JAR = os.path.join(os.sep, 'gp', 'aspralign', 'executable-jar', 'ASPRAlignWorkbench.jar')
-ASPRALIGN_CONFIG_FILE = os.path.join(os.sep, 'gp', 'aspralign', 'ASPRAlign-config.txt')
-# core aspralign jar for clustering
-CORE_JAR = os.path.join(WORKBENCH_PATH, 'core', 'coresCalculator.jar')
+# Molecules-pseudoknotfree
+ARCHAEA_DIR = os.path.join('Archaea', '5S')
+BACTERIA_DIR = os.path.join('Bacteria', '5S')
+EUKARYOTA_DIR = os.path.join('Eukaryota', '5S')
+Molecules_pseudoknotfree_db = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db')
+Molecules_pseudoknotfree_dbNH = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'db-nH')
+Molecules_pseudoknotfree_ctNH = os.path.join(WORKBENCH_PATH, 'Molecules-pseudoknotfree', 'ct-nH')
+db_archaea = os.path.join(Molecules_pseudoknotfree_db, ARCHAEA_DIR)
+db_bacteria = os.path.join(Molecules_pseudoknotfree_db, BACTERIA_DIR)
+db_eukaryota = os.path.join(Molecules_pseudoknotfree_db, EUKARYOTA_DIR)
+dbnh_archaea = os.path.join(Molecules_pseudoknotfree_dbNH, ARCHAEA_DIR)
+dbnh_bacteria = os.path.join(Molecules_pseudoknotfree_dbNH, BACTERIA_DIR)
+dbnh_eukaryota = os.path.join(Molecules_pseudoknotfree_dbNH, EUKARYOTA_DIR)
+ctnh_archaea = os.path.join(Molecules_pseudoknotfree_ctNH, ARCHAEA_DIR)
+ctnh_bacteria = os.path.join(Molecules_pseudoknotfree_ctNH, BACTERIA_DIR)
+ctnh_eukaryota = os.path.join(Molecules_pseudoknotfree_ctNH, EUKARYOTA_DIR)
+# workbench_results
+workbench_results = os.path.join(WORKBENCH_PATH, 'workbench_results')
+result_Archaea_90_110_allType = os.path.join(workbench_results, 'Archaea-90-110-allType')
+result_AT_aspralign = os.path.join(result_Archaea_90_110_allType, 'aspralign.csv')
+result_AT_dualgraph = os.path.join(result_Archaea_90_110_allType, 'dualgraph.csv')
+result_AT_nestedalign = os.path.join(result_Archaea_90_110_allType, 'nestedalign.csv')
+result_AT_rnadistance = os.path.join(result_Archaea_90_110_allType, 'rnadistance.csv')
+result_AT_rnaforester = os.path.join(result_Archaea_90_110_allType, 'rnaforester.csv')
 
-# distances output files
-ASPRALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-aspralign.csv')
-ASPRALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-aspralign.csv')
-ASPRALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-aspralign.csv')
+Molecules_pseudoknotfree = os.path.join(workbench_results, 'Molecules-pseudoknotfree')
+result_Molecules_pseudoknotfree = os.path.join(workbench_results, 'Archaea-90-110-allType')
+result_MP_aspralign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'aspralign.csv')
+result_MP_dualgraph_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'dualgraph.csv')
+result_MP_nestedalign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'nestedalign.csv')
+result_MP_rnadistance_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'rnadistance.csv')
+result_MP_rnaforester_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'rnaforester.csv')
 
-NESTEDALIGN_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-nestedalign.csv')
-NESTEDALIGN_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-nestedalign.csv')
-NESTEDALIGN_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-nestedalign.csv')
+result_MP_aspralign_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'aspralign.csv')
+result_MP_dualgraph_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'dualgraph.csv')
+result_MP_nestedalign_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'nestedalign.csv')
+result_MP_rnadistance_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'rnadistance.csv')
+result_MP_rnaforester_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'rnaforester.csv')
 
-RNAFORESTER_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-rnaforester.csv')
-RNAFORESTER_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-rnaforester.csv')
-RNAFORESTER_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-rnaforester.csv')
-
-RNADISTANCE_ARCHAEA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_ARCHAEA_DISTANCES, '5S-rnadistance.csv')
-RNADISTANCE_BACTERIA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_BACTERIA_DISTANCES, '5S-rnadistance.csv')
-RNADISTANCE_EUKARYOTA_OUTPUT_FILE = os.path.join(WORKBENCH_RESULTS_EUKARYOTA_DISTANCES, '5S-rnadistance.csv')
+result_MP_aspralign_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'aspralign.csv')
+result_MP_dualgraph_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'dualgraph.csv')
+result_MP_nestedalign_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'nestedalign.csv')
+result_MP_rnadistance_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'rnadistance.csv')
+result_MP_rnaforester_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'rnaforester.csv')

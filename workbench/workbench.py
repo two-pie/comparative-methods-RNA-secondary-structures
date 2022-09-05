@@ -1,7 +1,7 @@
-'''from workbench.aspralign_workbench import aspralign_workbench
-from workbench.nestedalign_workbench import nestedalign_workbench
-from workbench.rnaforester_workbench import rnaforester_workbench
-from workbench.rnadistance_workbench import rnadistance_workbench
+from aspralign_workbench import aspralign_workbench
+from nestedalign_workbench import nestedalign_workbench
+from rnaforester_workbench import rnaforester_workbench
+from rnadistance_workbench import rnadistance_workbench
 import subprocess
 from paths import *
 
@@ -17,30 +17,9 @@ def read_files(cores_folder, distances_folder):
 
 if __name__ == '__main__':
     # Distance calculator
-    aspralign_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
-                            [ASPRALIGN_ARCHAEA_OUTPUT_FILE, ASPRALIGN_BACTERIA_OUTPUT_FILE,
-                             ASPRALIGN_EUKARYOTA_OUTPUT_FILE], ASPRALIGN_WORKBENCH_JAR, ASPRALIGN_CONFIG_FILE)
 
-    nestedalign_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
-                              [NESTEDALIGN_ARCHAEA_OUTPUT_FILE, NESTEDALIGN_BACTERIA_OUTPUT_FILE,
-                               NESTEDALIGN_EUKARYOTA_OUTPUT_FILE])
-
-    rnaforester_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
-                              [RNAFORESTER_ARCHAEA_OUTPUT_FILE, RNAFORESTER_BACTERIA_OUTPUT_FILE,
-                               RNAFORESTER_EUKARYOTA_OUTPUT_FILE])
-
-    rnadistance_workbench.csv([ARCHAEA_DIR, BACTERIA_DIR, EUKARYOTA_DIR],
-                              [RNADISTANCE_ARCHAEA_OUTPUT_FILE, RNADISTANCE_BACTERIA_OUTPUT_FILE,
-                               RNADISTANCE_EUKARYOTA_OUTPUT_FILE])
-    # Core calculator
-    subprocess.run(['java', '-jar', CORE_JAR, ARCHAEA_DIR, WORKBENCH_RESULTS_ARCHAEA_CORES, 'archaea'],
-                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    subprocess.run(['java', '-jar', CORE_JAR, BACTERIA_DIR, WORKBENCH_RESULTS_BACTERIA_CORES, 'bacteria'],
-                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    subprocess.run(['java', '-jar', CORE_JAR, EUKARYOTA_DIR, WORKBENCH_RESULTS_EUKARYOTA_CORES, 'eukaryota'],
-                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
     # Clustering
-    molecule_files = os.listdir(WORKBENCH_RESULTS)
+    '''molecule_files = os.listdir(WORKBENCH_RESULTS)
     for f in molecule_files:
         read_files(os.path.join(WORKBENCH_RESULTS, f, 'cores'), os.path.join(WORKBENCH_RESULTS, f, 'distances'))'''
