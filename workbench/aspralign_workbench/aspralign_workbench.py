@@ -24,8 +24,8 @@ def csv(molecules_dir, output_file, aspralign_workbench_jar, aspralign_config):
     dataframe.columns = ['Molecule 1', 'Molecule 2', 'Distance']
 
     # set the name of the molecules
-    dataframe['Molecule 1'] = dataframe['Molecule 1'].map(lambda x: x[:-6])
-    dataframe['Molecule 2'] = dataframe['Molecule 2'].map(lambda x: x[:-6])
+    dataframe['Molecule 1'] = dataframe['Molecule 1'].map(lambda x: x.split('.')[0])
+    dataframe['Molecule 2'] = dataframe['Molecule 2'].map(lambda x: x.split('.')[0])
 
     # save pandas dataframe to csv file
     dataframe.to_csv(output_file, index=False)
