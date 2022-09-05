@@ -1,0 +1,38 @@
+ID, Domain, Organism,Origin URL, RNAType
+bpRNA_RFAM_670,Archaea,Halococcus morrhuae,https://en.wikipedia.org/wiki/5S_ribosomal_RNA,5S
+bpRNA_RFAM_37146,Archaea,Methanococcoides burtonii DSM 6242,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42552,Archaea,Methanococcoides burtonii DSM 6242,https://en.wikipedia.org/wiki/Bacterial_small_RNA,PYLIS_2
+bpRNA_RFAM_42570,Archaea,Methanococcoides burtonii DSM 6242,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_3
+bpRNA_RFAM_37151,Archaea,Methanohalobium evestigatum Z-7303,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42556,Archaea,Methanohalobium evestigatum Z-7303,https://en.wikipedia.org/wiki/Bacterial_small_RNA,PYLIS_2
+bpRNA_RFAM_42576,Archaea,Methanohalobium evestigatum Z-7303,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_3
+bpRNA_RFAM_37149,Archaea,Methanohalophilus mahii DSM 5219,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42554,Archaea,Methanohalophilus mahii DSM 5219,https://en.wikipedia.org/wiki/Bacterial_small_RNA,PYLIS_2
+bpRNA_RFAM_42574,Archaea,Methanohalophilus mahii DSM 5219,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_3
+bpRNA_RFAM_37153,Archaea,Methanosalsum zhilinae DSM 4017,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42558,Archaea,Methanosalsum zhilinae DSM 4017,https://en.wikipedia.org/wiki/Bacterial_small_RNA,PYLIS_2
+bpRNA_RFAM_42577,Archaea,Methanosalsum zhilinae DSM 4017,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_3
+bpRNA_RFAM_37140,Archaea,Methanosarcina acetivorans C2A,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42545,Archaea,Methanosarcina acetivorans C2A,https://en.wikipedia.org/wiki/Bacterial_small_RNA, PYLIS_2
+bpRNA_RFAM_42565,Archaea,Methanosarcina acetivorans C2A,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_3
+bpRNA_RFAM_42584,Archaea,Methanosarcina acetivorans C2A,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_4
+bpRNA_RFAM_42602,Archaea,Methanosarcina acetivorans C2A,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_5
+bpRNA_RFAM_42603,Archaea,Methanosarcina acetivorans C2A,https://en.wikipedia.org/wiki/PYLIS_downs,tream_sequence, PYLIS_6
+bpRNA_RFAM_37142,Archaea,Methanosarcina barkeri,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42548,Archaea,Methanosarcina barkeri,https://en.wikipedia.org/wiki/Bacterial_small_RNA,PYLIS_2
+bpRNA_RFAM_37143,Archaea,Methanosarcina barkeri str. Fusaro,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42550,Archaea,Methanosarcina barkeri str. Fusaro,https://en.wikipedia.org/wiki/Bacterial_small_RNA,PYLIS_2
+bpRNA_RFAM_42569,Archaea,Methanosarcina barkeri str. Fusaro,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence, PYLIS_3
+bpRNA_RFAM_42585,Archaea,Methanosarcina barkeri str. Fusaro,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_4
+bpRNA_RFAM_37138,Archaea,Methanosarcina mazei Go1,https://en.wikipedia.org/wiki/PCGEM1,PCGEM1
+bpRNA_RFAM_42542,Archaea,Methanosarcina mazei Go1,https://en.wikipedia.org/wiki/Bacterial_small_RNA, PYLIS_2
+bpRNA_RFAM_42563,Archaea,Methanosarcina mazei Go1,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_3
+bpRNA_RFAM_42587,Archaea,Methanosarcina mazei Go1,https://en.wikipedia.org/wiki/PYLIS_downstream_sequence,PYLIS_5
+bpRNA_RFAM_38668,Archaea,Methanospirillum hungatei JF-1,https://en.wikipedia.org/wiki/Mir-575_microRNA_precursor_family,group-II-D1D4-7
+bpRNA_RFAM_5968,Archaea,Pyrococcus abyssi GE5,https://en.wikipedia.org/wiki/SscA_RNA,SscA
+bpRNA_RFAM_5967,Archaea,Pyrococcus furiosus,https://en.wikipedia.org/wiki/SscA_RNA,SscA
+bpRNA_RFAM_5970,Archaea,Pyrococcus horikoshii OT3,https://en.wikipedia.org/wiki/SscA_RNA,SscA
+bpRNA_RFAM_5971,Archaea,Pyrococcus woesei,https://en.wikipedia.org/wiki/SscA_RNA,SscA
+bpRNA_RFAM_5969,Archaea,Thermococcus kodakarensis KOD1,https://en.wikipedia.org/wiki/SscA_RNA,SscA
+bpRNA_RFAM_5814,Archaea,Thermoplasma acidophilum,https://en.wikipedia.org/wiki/TPP_riboswitch,TPP
+bpRNA_RFAM_5815,Archaea,Thermoplasma acidophilum,https://en.wikipedia.org/wiki/TPP_riboswitch,TPP
