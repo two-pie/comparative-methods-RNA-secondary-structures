@@ -1,4 +1,4 @@
-bpRNA ID,Length,Unpaired Bases,Paired Bases,Origin Name,Domain,Organism,Database,Origin URL,Unnamed: 9,RNA Type
+Id,Length,Unpaired Bases,Paired Bases,Origin Name,Domain,Organism,Database,Origin URL,Unnamed: 9,RNA Type
 bpRNA_CRW_26417,93,49,44,tRNAs/Asparagine/ECU33333,Bacteria,Escherichia coli W3110,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
 bpRNA_CRW_39281,92,50,42,tRNAs/Isoleucine/AY934305,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA
 bpRNA_CRW_39282,92,50,42,tRNAs/Isoleucine/AY934306,Bacteria,uncultured Marinobacter sp.,CRW,http://www.rna.ccbb.utexas.edu/DAT/3C/SBPI/index.php,,tRNA

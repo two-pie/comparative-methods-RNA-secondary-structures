@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import subprocess
 import os
 import sys
@@ -19,7 +21,8 @@ def calculate_core1(molecules_dir, organism_file, output_file):
     for molecule in molecules:
         core1 = subprocess.run(['java', '-jar', 'core1', CORE_JAR_PATH, os.path.join(molecules_dir, molecule)],
                                capture_output=True)
-        organism_name = organism_df.index[df['bpRNA ID' == molecule.split('.')[0]]].tolist()[0]
+        # search the organism of a molecule
+        organism_name = organism_df.loc[organism_df['Id'] == molecule.split('.')[0]]['Organism'].values[0]
         df.loc[len(df)] = [molecule.split('.')[0], organism_name, core1]
     df.to_csv(output_file, index=False)
 
@@ -36,7 +39,7 @@ def calculate_core2(molecules_dir, organism_file, output_file):
     for molecule in molecules:
         core2 = subprocess.run(['java', '-jar', CORE_JAR_PATH, '-core2', os.path.join(molecules_dir, molecule)],
                                capture_output=True)
-        organism_name = organism_df.index[df['Id' == molecule.split('.')[0]]].tolist()[0]
+        organism_name = organism_df.loc[organism_df['Id'] == molecule.split('.')[0]]['Organism'].values[0]
         df.loc[len(df)] = [molecule.split('.')[0], organism_name, core2]
     df.to_csv(output_file, index=False)
 
@@ -56,5 +59,5 @@ parser.add_argument('output_folder',
                     help='Destination folder on which two files called core1.csv and core2.csv are saved. '
                          'If the files do not exist they are created , otherwise they are overwritten.')
 args = parser.parse_args()
-calculate_core1(args.molecules_dir, os.path.join(args.output_folder, 'core1.csv'), args.organism_csv)
-calculate_core2(args.molecules_dir, os.path.join(args.output_folder, 'core2.csv'), args.organism_csv)
+calculate_core1(args.molecules_dir, args.organism_csv, os.path.join(args.output_folder, 'core1.csv'))
+calculate_core2(args.molecules_dir, args.organism_csv, os.path.join(args.output_folder, 'core2.csv'))
