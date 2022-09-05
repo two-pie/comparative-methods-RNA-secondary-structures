@@ -6,13 +6,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN sudo apt-get -y update; sudo apt-get -y install python3 git curl sudo openjdk-17-jdk openjdk-17-jre; \
     # Installing google chrome
-    curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-    && apt-get -y install ./google-chrome-stable_current_amd64.deb  \
-    && rm google-chrome-stable_current_amd64.deb; \
+    sudo curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+    && sudo apt-get -y install ./google-chrome-stable_current_amd64.deb  \
+    && sudo rm google-chrome-stable_current_amd64.deb; \
     # Download and install miniconda
-    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh  \
+    sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh  \
     && sudo /bin/bash miniconda.sh -b -p /opt/conda  \
-    && rm miniconda.sh
+    && sudo rm miniconda.sh
 
 # ViennaRNA
 RUN sudo /opt/conda/bin/conda update -y conda; \
@@ -23,7 +23,7 @@ RUN sudo /opt/conda/bin/conda update -y conda; \
 # This section is just for caching, it will be removed later
 ADD requirements.txt .
 RUN sudo pip -q install -r requirements.txt  \
-    && rm requirements.txt
+    && sudo rm requirements.txt
 ADD workbench ./workbench
 RUN sudo chmod -R 777 /home/matlab/Documents/MATLAB/gp
 RUN mkdir symlinks  \
