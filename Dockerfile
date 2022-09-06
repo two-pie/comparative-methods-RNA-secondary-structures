@@ -26,11 +26,18 @@ RUN sudo pip -q install -r requirements.txt  \
     && sudo rm requirements.txt
 ADD workbench ./workbench
 RUN sudo chmod -R 777 /home/matlab/Documents/MATLAB/gp
-RUN mkdir symlinks  \
-    && cd symlinks
-RUN ln -s /home/matlab/Documents/MATLAB/gp/workbench/aspralign_workbench/aspralign_workbench.py aspralign_distance_tool; \
+RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType  \
+    workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S  \
+    workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S  \
+    workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S \
+    symlinks
+RUN cd symlinks && \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/aspralign_workbench/aspralign_workbench.py aspralign_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/dualgraph_workbench/dualgraph_workbench.py dualgraph_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/nestedalign_workbench/nestedalign_workbench.py nestedalign_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool
-RUN echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
+    ln -s /opt/conda/bin/RNAforester RNAforester; \
+
+
+    echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
