@@ -22,8 +22,10 @@ RUN sudo /opt/conda/bin/conda update -y conda; \
 
 # This section is just for caching, it will be removed later
 ADD requirements.txt .
-RUN sudo pip -q install -r requirements.txt  \
-    && sudo rm requirements.txt
+RUN pip -q install -r requirements.txt  \
+    && rm requirements.txt \
+    && pip install --upgrade urllib3 \
+    && pip install --upgrade requests
 ADD workbench ./workbench
 RUN sudo chmod -R 777 /home/matlab/Documents/MATLAB/gp
 RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType  \
@@ -38,6 +40,4 @@ RUN cd symlinks && \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
     ln -s /opt/conda/bin/RNAforester RNAforester; \
-
-
     echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
