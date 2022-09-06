@@ -24,7 +24,6 @@ def __setup_driver():
 
     # create web driver
     dr = webdriver.Chrome(options=options, service=Service(ChromeDriverManager().install()))
-
     return dr
 
 
