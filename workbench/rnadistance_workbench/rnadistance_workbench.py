@@ -7,10 +7,14 @@ import pandas as pd
 
 
 def __rnadistance(directory, df):
+    # list of molecules in the directory
     molecules = sorted(os.listdir(directory))
+
+    # use list comprehension to get all pairs of molecules
     molecule_pairs = [(molecule_1, molecule_2) for i, molecule_1 in enumerate(molecules, start=1) for molecule_2 in
                       molecules[i:]]
     i = 1
+    # iterate over all pairs of molecules
     for molecule_1, molecule_2 in molecule_pairs:
         print(f'{i}/{len(molecule_pairs)}')
         i += 1
@@ -18,11 +22,14 @@ def __rnadistance(directory, df):
             # get the content of the first molecule
             content_molecule_1 = file_1.read()
             with open(os.path.join(directory, molecule_2), 'r') as file_2:
+                # get the content of the second molecule
                 content_molecule_2 = file_2.read()
+                # calculate the distance
                 sp = subprocess.Popen(['RNAdistance'], stdout=subprocess.PIPE,
                                       stdin=subprocess.PIPE)
                 distance = sp.communicate(input=f'{content_molecule_1}\n{content_molecule_2}'.encode('utf-8'))[
                                0].decode('utf-8').strip()[3:]
+                # save the data in the dataframe
                 df.loc[len(df)] = [molecule_1.split('.')[0], molecule_2.split('.')[0], distance]
 
 

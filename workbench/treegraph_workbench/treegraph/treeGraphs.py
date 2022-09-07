@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 import sys
 import numpy
 import numpy.linalg as LA
@@ -6,7 +7,6 @@ from decimal import *
 from copy import deepcopy
 from itertools import permutations
 from ClassesFunctions import * # S.J. 06/14/2019 - adding to use its functions
-
 graphID = []
 TreeGraphs = [] # S.J. 06/14/2019
 
