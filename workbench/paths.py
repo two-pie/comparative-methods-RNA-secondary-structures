@@ -45,6 +45,7 @@ result_MP_dualgraph_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR
 result_MP_nestedalign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'nestedalign.csv')
 result_MP_rnadistance_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'rnadistance.csv')
 result_MP_rnaforester_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'rnaforester.csv')
+result_MP_treegraph_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'treegraph.csv')
 
 result_MP_aspralign_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'aspralign.csv')
 result_MP_dualgraph_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'dualgraph.csv')

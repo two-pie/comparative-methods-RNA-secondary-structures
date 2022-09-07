@@ -39,6 +39,7 @@ RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType  \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/nestedalign_workbench/nestedalign_workbench.py nestedalign_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/treegraph_workbench/treegraph_workbench.py treegraph_distance_tool; \
     ln -s /opt/conda/bin/RNAforester RNAforester; \
     ln -s /opt/conda/bin/RNAdistance RNAdistance; \
     echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
