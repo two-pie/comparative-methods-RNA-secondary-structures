@@ -38,6 +38,7 @@ result_AT_dualgraph = os.path.join(result_Archaea_90_110_allType, 'dualgraph.csv
 result_AT_nestedalign = os.path.join(result_Archaea_90_110_allType, 'nestedalign.csv')
 result_AT_rnadistance = os.path.join(result_Archaea_90_110_allType, 'rnadistance.csv')
 result_AT_rnaforester = os.path.join(result_Archaea_90_110_allType, 'rnaforester.csv')
+result_AT_treegraph = os.path.join(result_Archaea_90_110_allType, 'treegraph.csv')
 
 Molecules_pseudoknotfree = os.path.join(workbench_results, 'Molecules-pseudoknotfree')
 result_MP_aspralign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'aspralign.csv')
@@ -52,9 +53,11 @@ result_MP_dualgraph_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_D
 result_MP_nestedalign_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'nestedalign.csv')
 result_MP_rnadistance_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'rnadistance.csv')
 result_MP_rnaforester_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'rnaforester.csv')
+result_MP_treegraph_Bacteria = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'treegraph.csv')
 
 result_MP_aspralign_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'aspralign.csv')
 result_MP_dualgraph_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'dualgraph.csv')
 result_MP_nestedalign_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'nestedalign.csv')
 result_MP_rnadistance_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'rnadistance.csv')
 result_MP_rnaforester_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'rnaforester.csv')
+result_MP_treegraph_Eukaryota = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'treegraph.csv')

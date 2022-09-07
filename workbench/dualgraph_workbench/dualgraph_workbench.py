@@ -12,7 +12,7 @@ import pandas as pd
 
 def create_matrices(molecules_dir, output_file_csv):
     # request matlab credentials
-    subprocess.run(['matlab', '-batch', '\"exit;\"'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    subprocess.run(['matlab', '-batch', 'exit;'])
     current_dir = os.getcwd()
     molecules = sorted(os.listdir(molecules_dir))
     # paths
@@ -51,6 +51,7 @@ def create_matrices(molecules_dir, output_file_csv):
     result_df['Molecule'] = molecules_df['Molecule']
     result_df.to_csv(output_file_csv, index=False)
     os.chdir(current_dir)
+    print('\x1b[6;30;42m' + f'{output_file_csv} created' + '\x1b[0m')
 
 
 def extract_matrices(no_extracted_matrices_path, output_dir, jar_path):

@@ -83,7 +83,7 @@ def csv(molecules_dir, output_file):
 
     # save the dataframe as a csv file
     df.to_csv(output_file, index=False)
-    print(f'{output_file} created')
+    print('\x1b[6;30;42m' + f'{output_file} created' + '\x1b[0m')
 
     # shutting down driver
     driver.quit()

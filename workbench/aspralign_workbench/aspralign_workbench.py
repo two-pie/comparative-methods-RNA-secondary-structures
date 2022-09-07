@@ -34,7 +34,7 @@ def csv(molecules_dir, output_file, aspralign_workbench_jar, aspralign_config):
     os.remove(os.path.join(molecules_dir, 'ASPRAlignComparisonResults.csv'))
     os.remove(os.path.join(molecules_dir, 'ASPRAlignProcessedStructures.csv'))
 
-    print(f'{output_file} generated')
+    print('\x1b[6;30;42m' + f'{output_file} created' + '\x1b[0m')
 
 
 aspralign_jar_path = os.path.join(os.path.dirname(os.path.realpath(sys.argv[0])), 'aspralign.jar')
