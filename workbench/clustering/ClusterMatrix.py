@@ -10,8 +10,9 @@ import numpy as np
 from sklearn.cluster import *
 from sklearn import metrics
 
-if len(sys.argv) != 3:
-    print("Usage: python3 "+sys.argv[0]+" <molecule-list-csv-file> <distances-csv-file>")
+if len(sys.argv) != 4:
+    print("Usage: python3 " + sys.argv[
+        0] + " <molecule-list-csv-file> <distances-csv-file> <distance_tool_result_csv_file>")
     sys.exit(1)
 # Read the list of molecules
 molecules = pd.read_csv(sys.argv[1], sep=";")
@@ -25,7 +26,6 @@ for i in range(len(molecules)):
 organism_of = dict()
 for i in range(len(molecules)):
     organism_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Organism'].strip()
-
 
 if molecules.columns[2] == "Core1":
     # Create dictionary Id -> Core1
@@ -72,65 +72,42 @@ labels_true = list(label_of.values())
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed', linkage='single').fit(distance_matrix)
 labels_pred = model.fit_predict(distance_matrix)
 
-print("Method: single")
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
+f = open(sys.argv[2], 'w+')
+f.write('Method,Rand_score,Homogeneity_score,completeness_score')
+agg_single = 'single,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
+    metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
+    metrics.completeness_score(labels_true, labels_pred))
+f.write(agg_single)
 
-print("Method: complete")
+# print("Method: single")
+# print("Rand_score", metrics.rand_score(labels_true, labels_pred))
+# print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
+# print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
+
+# print("Method: complete")
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed', linkage='complete').fit(distance_matrix)
 labels_pred = model.fit_predict(distance_matrix)
 
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
+f.write('Method,Rand_score,Homogeneity_score,completeness_score')
+agg_complete = 'complete,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
+    metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
+    metrics.completeness_score(labels_true, labels_pred))
+f.write(agg_complete)
 
-print("Method: average")
+# print("Rand_score", metrics.rand_score(labels_true, labels_pred))
+# print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
+# print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
+
+# print("Method: average")
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed', linkage='average').fit(distance_matrix)
 labels_pred = model.fit_predict(distance_matrix)
 
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
+f.write('Method,Rand_score,Homogeneity_score,completeness_score')
+agg_average = 'average,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
+    metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
+    metrics.completeness_score(labels_true, labels_pred))
+f.write(agg_average)
 
-'''print("############################")
-print("AffinityPropagation")
-model = AffinityPropagation(affinity='precomputed').fit(distance_matrix)
-labels_pred = model.fit_predict(distance_matrix)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-
-print("############################")
-print("Birch")
-model = Birch(n_clusters=n_clusters).fit(distance_matrix)
-labels_pred = model.fit_predict(distance_matrix)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("DBSCAN")
-model = DBSCAN(metric='precomputed').fit(distance_matrix)
-labels_pred = model.fit_predict(distance_matrix)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("KMeans")
-model = KMeans(n_clusters=n_clusters,algorithm='full').fit(distance_matrix)
-labels_pred = model.fit_predict(distance_matrix)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("BisectingKMeans")
-model = BisectingKMeans(n_clusters=n_clusters).fit(distance_matrix)
-labels_pred = model.fit_predict(distance_matrix)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-'''
+# print("Rand_score", metrics.rand_score(labels_true, labels_pred))
+# print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
+# print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
