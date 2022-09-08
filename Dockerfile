@@ -33,13 +33,14 @@ RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType  \
     workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S  \
     workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S \
     symlinks; \
+    # Symbolic link tools
     cd symlinks  \
-    && ln -s /home/matlab/Documents/MATLAB/gp/workbench/aspralign_workbench/aspralign_workbench.py aspralign_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/dualgraph_workbench/treegraph_workbench.py dualgraph_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/nestedalign_workbench/nestedalign_workbench.py nestedalign_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/treegraph_workbench/treegraph_workbench.py treegraph_distance_tool; \
+    && ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/aspralign_workbench/aspralign_workbench.py aspralign_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/dualgraph_workbench/dualgraph_workbench.py dualgraph_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/nestedalign_workbench/nestedalign_workbench.py nestedalign_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/treegraph_workbench/treegraph_workbench.py treegraph_distance_tool; \
     ln -s /opt/conda/bin/RNAforester RNAforester; \
     ln -s /opt/conda/bin/RNAdistance RNAdistance; \
     echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
