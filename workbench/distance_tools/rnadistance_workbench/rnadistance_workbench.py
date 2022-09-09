@@ -51,4 +51,5 @@ parser.add_argument('output_file_csv',
                     help='file used to store the calculation as csv file. if the file does not exist it is created, '
                          'otherwise it is overwritten')
 args = parser.parse_args()
+print('\x1b[6;30;42m' + 'RNADISTANCE DISTANCE TOOL' + '\x1b[0m')
 csv(args.molecules_dir, args.output_file_csv)
