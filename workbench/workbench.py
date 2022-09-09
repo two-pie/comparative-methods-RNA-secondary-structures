@@ -34,3 +34,10 @@ if __name__ == '__main__':
     subprocess.run(['rnadistance_distance_tool', dbnh_eukaryota, result_MP_rnadistance_Eukaryota])
     subprocess.run(['rnaforester_distance_tool', DBNFilesNH, result_MP_rnaforester_Eukaryota])
     subprocess.run(['treegraph_distance_tool', ctnh_eukaryota, result_MP_treegraph_Eukaryota])
+
+    # Core calculator
+    subprocess.run(['python3', 'cores_calculator_workbench.py'])
+
+    # Clustering calculator
+    subprocess.run(['python3', 'cluster_matrix_workbench.py'])
+    subprocess.run(['python3', 'cluster_features_workbench.py'])

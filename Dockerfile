@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM mathworks/matlab:r2022a
 
 WORKDIR /home/matlab/Documents/MATLAB/gp
@@ -41,6 +42,7 @@ RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType  \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/treegraph_workbench/treegraph_workbench.py treegraph_distance_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/core/cores/coresCalculator.jar cores_calculator_tool \
     ln -s /opt/conda/bin/RNAforester RNAforester; \
     ln -s /opt/conda/bin/RNAdistance RNAdistance; \
     echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc

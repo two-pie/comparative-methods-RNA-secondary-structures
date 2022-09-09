@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-EvalTax: executes the evaluation of 
-@author: Michela Quadrini and Luca Tesei
-"""
 import math
 import sys
 import pandas as pd
-import numpy as np
-from sklearn.metrics import *
 
 from sklearn.cluster import *
 from sklearn import metrics
@@ -16,7 +10,8 @@ from sklearn import metrics
 import argparse
 
 if len(sys.argv) != 3:
-    print("Usage: python3 " + sys.argv[0] + " <molecule-list-csv-file> <eigenvalues-csv-file>")
+    print("Usage: python3 " + sys.argv[
+        0] + " <molecule-list-csv-file> <distances-csv-file> <distance_tool_result_csv_file>")
     sys.exit(1)
 # Read the list of molecules
 molecules = pd.read_csv(sys.argv[1], sep=";")
@@ -26,31 +21,16 @@ index_of = dict()
 for i in range(len(molecules)):
     index_of[molecules.loc[i].loc['Id']] = i
 
-# Create dictionary Id -> Organism 
-organism_of = dict()
-for i in range(len(molecules)):
-    organism_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Organism'].strip()
-
-if molecules.columns[2] == "Core1":
-    # Create dictionary Id -> Core1
-    taxon_of = dict()
-    for i in range(len(molecules)):
-        taxon_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core1'].strip()
-
-    # Create dictionary Id -> Core1
+if molecules.columns[2] == "CorePlus":
+    # Create dictionary Id -> CorePlus
     label_of = dict()
     for i in range(len(molecules)):
-        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core1'].strip()
+        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['CorePlus'].strip()
 else:
-    # Create dictionary Id -> Core2
-    taxon_of = dict()
-    for i in range(len(molecules)):
-        taxon_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core2'].strip()
-
-    # Create dictionary Id -> Core2
+    # Create dictionary Id -> Core
     label_of = dict()
     for i in range(len(molecules)):
-        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core2'].strip()
+        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Core'].strip()
 
 # Read the list of distances
 distances = pd.read_csv(sys.argv[2], sep=",")
@@ -80,65 +60,26 @@ labels_true = list(label_of.values())
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage='single').fit(ListFeatures)
 labels_pred = model.fit_predict(ListFeatures)
 
-print("Method: single")
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
+f = open(sys.argv[2], 'w+')
+f.write('Method,Rand_score,Homogeneity_score,completeness_score')
+
+agg_csv = 'single,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
+    metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
+    metrics.completeness_score(labels_true, labels_pred))
+f.write(agg_csv)
 
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage='complete').fit(ListFeatures)
 labels_pred = model.fit_predict(ListFeatures)
-# print("Labels Pred", list(labels_pred))
 
-print("Method: complete")
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
+agg_csv = 'complete,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
+    metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
+    metrics.completeness_score(labels_true, labels_pred))
+f.write(agg_csv)
 
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage='average').fit(ListFeatures)
 labels_pred = model.fit_predict(ListFeatures)
-# print("Labels Pred", list(labels_pred))
 
-print("Method: average")
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred))
-
-print("############################")
-print("AffinityPropagation")
-model = AffinityPropagation(affinity='euclidean').fit(ListFeatures)
-labels_pred = model.fit_predict(ListFeatures)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("Birch")
-model = Birch(n_clusters=n_clusters).fit(ListFeatures)
-labels_pred = model.fit_predict(ListFeatures)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("DBSCAN")
-model = DBSCAN(metric='euclidean').fit(ListFeatures)
-labels_pred = model.fit_predict(ListFeatures)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("KMeans")
-model = KMeans(n_clusters=n_clusters, algorithm='full').fit(ListFeatures)
-labels_pred = model.fit_predict(ListFeatures)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
-
-print("############################")
-print("BisectingKMeans")
-model = BisectingKMeans(n_clusters=n_clusters).fit(ListFeatures)
-labels_pred = model.fit_predict(ListFeatures)
-print("Rand_score", metrics.rand_score(labels_true, labels_pred))
-print("Homogeneity_score", metrics.homogeneity_score(labels_true, labels_pred))
-print("completeness_score", metrics.completeness_score(labels_true, labels_pred), end="\n\n")
+agg_csv = 'average,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
+    metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
+    metrics.completeness_score(labels_true, labels_pred))
+f.write(agg_csv)
