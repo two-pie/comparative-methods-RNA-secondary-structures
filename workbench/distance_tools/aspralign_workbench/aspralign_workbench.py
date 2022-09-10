@@ -34,7 +34,7 @@ def csv(molecules_dir, output_file, aspralign_workbench_jar, aspralign_config):
     os.remove(os.path.join(molecules_dir, 'ASPRAlignComparisonResults.csv'))
     os.remove(os.path.join(molecules_dir, 'ASPRAlignProcessedStructures.csv'))
 
-    print('\x1b[6;30;42m' + f'{output_file} created' + '\x1b[0m')
+    print('\x1b[1;32;40m' + f'{output_file} created' + '\x1b[0m')
 
 
 aspralign_jar_path = os.path.join(os.path.dirname(os.path.realpath(sys.argv[0])), 'ASPRAlignWorkbench.jar')
@@ -45,5 +45,5 @@ parser.add_argument('output_file_csv',
                     help='file used to store the calculation as csv file. if the file does not exist it is created, '
                          'otherwise it is overwritten')
 args = parser.parse_args()
-print('\x1b[6;30;42m' + 'ASPRALIGN DISTANCE TOOL' + '\x1b[0m')
+print('\x1b[0;31;40m' + 'ASPRALIGN DISTANCE TOOL' + '\x1b[0m')
 csv(args.molecules_dir, args.output_file_csv, aspralign_jar_path, aspralign_config_path)

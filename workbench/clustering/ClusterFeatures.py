@@ -83,3 +83,4 @@ agg_csv = 'average,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' +
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
     metrics.completeness_score(labels_true, labels_pred))
 f.write(agg_csv)
+print('\x1b[1;32;40m' + f'{f} created' + '\x1b[0m')

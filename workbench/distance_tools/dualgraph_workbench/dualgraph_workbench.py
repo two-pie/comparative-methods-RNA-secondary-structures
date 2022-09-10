@@ -51,7 +51,7 @@ def create_matrices(molecules_dir, output_file_csv):
     result_df['Molecule'] = molecules_df['Molecule']
     result_df.to_csv(output_file_csv, index=False)
     os.chdir(current_dir)
-    print('\x1b[6;30;42m' + f'{output_file_csv} created' + '\x1b[0m')
+    print('\x1b[1;32;40m' + f'{output_file_csv} created' + '\x1b[0m')
 
 
 def extract_matrices(no_extracted_matrices_path, output_dir, jar_path):
@@ -72,5 +72,5 @@ parser.add_argument('output_file_csv',
                     help='file used to store the calculation as csv file. if the file does not exist it is created, '
                          'otherwise it is overwritten')
 args = parser.parse_args()
-print('\x1b[6;30;42m' + 'DUALGRAPH DISTANCE TOOL' + '\x1b[0m')
+print('\x1b[0;31;40m' + 'DUALGRAPH DISTANCE TOOL' + '\x1b[0m')
 create_matrices(args.molecules_dir, args.output_file_csv)

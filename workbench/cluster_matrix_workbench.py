@@ -1,7 +1,8 @@
 import subprocess
 
-from workbench.paths import *
+from paths import *
 
+print('\x1b[0;31;40m' + 'CLUSTER MATRIX TOOL' + '\x1b[0m')
 # clustering for Archaea-90-110-allType
 # core plus
 subprocess.run(
