@@ -2,7 +2,7 @@ import os
 import sys
 
 # root directory of the workbench
-WORKBENCH_PATH = os.path.dirname(os.path.realpath(sys.argv[0]))
+WORKBENCH_PATH = os.path.dirname(os.path.dirname(os.path.realpath(sys.argv[0])))
 
 # workbench results directory
 WORKBENCH_RESULTS = os.path.join(WORKBENCH_PATH, 'workbench_results')
@@ -34,6 +34,7 @@ ctnh_eukaryota = os.path.join(Molecules_pseudoknotfree_ctNH, EUKARYOTA_DIR)
 # workbench_results
 # distances
 workbench_results = os.path.join(WORKBENCH_PATH, 'workbench_results')
+Molecules_pseudoknotfree = os.path.join(workbench_results, 'Molecules-pseudoknotfree')
 result_Archaea_90_110_allType = os.path.join(workbench_results, 'Archaea-90-110-allType')
 distances_Archaea_90_110_allType = os.path.join(result_Archaea_90_110_allType, 'distances')
 ARCHAEA_DISTANCES_DIR = os.path.join(ARCHAEA_DIR, 'distances')
@@ -42,27 +43,25 @@ EUKARYOTA_DISTANCES_DIR = os.path.join(EUKARYOTA_DIR, 'distances')
 # cores
 core_calculator_workbench = os.path.join(WORKBENCH_PATH, 'cores_calculator_workbench.py')
 # clustering
-cluster_matrix_workbench = os.path.join(WORKBENCH_PATH, 'cluster_matrix_workbench.py')
-cluster_features_workbench = os.path.join(WORKBENCH_PATH, 'cluster_features_workbench.py')
 cores_Archaea_90_110_allType_dir = os.path.join(result_Archaea_90_110_allType, 'cores')
 ARCHAEA_CORES_DIR = os.path.join(ARCHAEA_DIR, 'cores')
 BACTERIA_CORES_DIR = os.path.join(BACTERIA_DIR, 'cores')
 EUKARYOTA_CORES_DIR = os.path.join(EUKARYOTA_DIR, 'cores')
 # core plus
-coreplus_Archaea_90_110_allType = os.path.join(cores_Archaea_90_110_allType_dir, 'core_plus.csv')
-ARCHAEA_COREPLUS = os.path.join(ARCHAEA_CORES_DIR, 'core_plus.csv')
-BACTERIA_COREPLUS = os.path.join(BACTERIA_CORES_DIR, 'core_plus.csv')
-EUKARYOTA_COREPLUS = os.path.join(EUKARYOTA_CORES_DIR, 'core_plus.csv')
+coreplus_Archaea_90_110_allType = os.path.join(cores_Archaea_90_110_allType_dir, 'core_plus')
+ARCHAEA_COREPLUS = os.path.join(Molecules_pseudoknotfree, ARCHAEA_CORES_DIR, 'core_plus')
+BACTERIA_COREPLUS = os.path.join(Molecules_pseudoknotfree, BACTERIA_CORES_DIR, 'core_plus')
+EUKARYOTA_COREPLUS = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_CORES_DIR, 'core_plus')
 # core
-core_Archaea_90_110_allType = os.path.join(cores_Archaea_90_110_allType_dir, 'core.csv')
-ARCHAEA_CORES = os.path.join(ARCHAEA_CORES_DIR, 'core.csv')
-BACTERIA_CORES = os.path.join(BACTERIA_CORES_DIR, 'core.csv')
-EUKARYOTA_CORES = os.path.join(EUKARYOTA_CORES_DIR, 'core.csv')
+core_Archaea_90_110_allType = os.path.join(cores_Archaea_90_110_allType_dir, 'core')
+ARCHAEA_CORE = os.path.join(Molecules_pseudoknotfree, ARCHAEA_CORES_DIR, 'core')
+BACTERIA_CORE = os.path.join(Molecules_pseudoknotfree, BACTERIA_CORES_DIR, 'core')
+EUKARYOTA_CORE = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_CORES_DIR, 'core')
 # clustering
 clustering_Archaea_90_110_allType = os.path.join(result_Archaea_90_110_allType, 'clustering')
-ARCHAEA_CLUSTERING_DIR = os.path.join(ARCHAEA_DIR, 'clustering')
-BACTERIA_CLUSTERING_DIR = os.path.join(BACTERIA_DIR, 'clustering')
-EUKARYOTA_CLUSTERING_DIR = os.path.join(EUKARYOTA_DIR, 'clustering')
+ARCHAEA_CLUSTERING_DIR = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DIR, 'clustering')
+BACTERIA_CLUSTERING_DIR = os.path.join(Molecules_pseudoknotfree, BACTERIA_DIR, 'clustering')
+EUKARYOTA_CLUSTERING_DIR = os.path.join(Molecules_pseudoknotfree, EUKARYOTA_DIR, 'clustering')
 
 result_AT_aspralign = os.path.join(distances_Archaea_90_110_allType, 'aspralign.csv')
 result_AT_dualgraph = os.path.join(distances_Archaea_90_110_allType, 'dualgraph.csv')
@@ -71,7 +70,6 @@ result_AT_rnadistance = os.path.join(distances_Archaea_90_110_allType, 'rnadista
 result_AT_rnaforester = os.path.join(distances_Archaea_90_110_allType, 'rnaforester.csv')
 result_AT_treegraph = os.path.join(distances_Archaea_90_110_allType, 'treegraph.csv')
 
-Molecules_pseudoknotfree = os.path.join(workbench_results, 'Molecules-pseudoknotfree')
 result_MP_aspralign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DISTANCES_DIR, 'aspralign.csv')
 result_MP_dualgraph_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DISTANCES_DIR, 'dualgraph.csv')
 result_MP_nestedalign_Archaea = os.path.join(Molecules_pseudoknotfree, ARCHAEA_DISTANCES_DIR, 'nestedalign.csv')

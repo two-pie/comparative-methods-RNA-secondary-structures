@@ -33,10 +33,18 @@ RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType/distances  \
     workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S/distances  \
     workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S/distances  \
     workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S/distances \
-    workbench/workbench_results/Archaea-90-110-allType/cores  \
-    workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S/cores  \
-    workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S/cores  \
-    workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S/cores \
+    workbench/workbench_results/Archaea-90-110-allType/cores/core \
+    workbench/workbench_results/Archaea-90-110-allType/cores/core_plus \
+    workbench/workbench_results/Archaea-90-110-allType/clustering \
+    workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S/cores/core \
+    workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S/cores/core_plus \
+    workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S/clustering \
+    workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S/cores/core \
+    workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S/cores/core_plus \
+    workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S/clustering \
+    workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S/cores/core \
+    workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S/cores/core_plus \
+    workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S/clustering \
     symlinks; \
     # Symbolic link tools
     cd symlinks  \
@@ -46,7 +54,9 @@ RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType/distances  \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnadistance_workbench/rnadistance_workbench.py rnadistance_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnaforester_workbench/rnaforester_workbench.py rnaforester_distance_tool; \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/treegraph_workbench/treegraph_workbench.py treegraph_distance_tool; \
-    ln -s /home/matlab/Documents/MATLAB/gp/workbench/core/cores/coresCalculator.jar cores_calculator_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/core/coresCalculator.sh cores_calculator_tool; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/clustering/ClusterMatrix.py cluster_matrix; \
+    ln -s /home/matlab/Documents/MATLAB/gp/workbench/clustering/ClusterFeatures.py cluster_features; \
     ln -s /opt/conda/bin/RNAforester RNAforester; \
     ln -s /opt/conda/bin/RNAdistance RNAdistance; \
     echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
