@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import math
 import sys
 import pandas as pd
 
 from sklearn.cluster import *
 from sklearn import metrics
-
-import argparse
 
 if len(sys.argv) != 4:
     print("Usage: python3 " + sys.argv[
@@ -59,26 +56,29 @@ model = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', lin
 labels_pred = model.fit_predict(ListFeatures)
 
 f = open(sys.argv[3], 'w+')
-f.write('Method,Rand_score,Homogeneity_score,completeness_score'+'\n')
+f.write('Method,Rand_score,Homogeneity_score,completeness_score,adjusted_rand_score' + '\n')
 
 agg_csv = 'single,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
-    metrics.completeness_score(labels_true, labels_pred))
-f.write(agg_csv+'\n')
+    metrics.completeness_score(labels_true, labels_pred)) + ',' + str(
+    metrics.adjusted_rand_score(labels_true, labels_pred))
+f.write(agg_csv + '\n')
 
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage='complete').fit(ListFeatures)
 labels_pred = model.fit_predict(ListFeatures)
 
 agg_csv = 'complete,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
-    metrics.completeness_score(labels_true, labels_pred))
-f.write(agg_csv+'\n')
+    metrics.completeness_score(labels_true, labels_pred)) + ',' + str(
+    metrics.adjusted_rand_score(labels_true, labels_pred))
+f.write(agg_csv + '\n')
 
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage='average').fit(ListFeatures)
 labels_pred = model.fit_predict(ListFeatures)
 
 agg_csv = 'average,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
-    metrics.completeness_score(labels_true, labels_pred))
-f.write(agg_csv+'\n')
+    metrics.completeness_score(labels_true, labels_pred)) + ',' + str(
+    metrics.adjusted_rand_score(labels_true, labels_pred))
+f.write(agg_csv + '\n')
 print('\x1b[1;32;40m' + f'{f.name} created' + '\x1b[0m')

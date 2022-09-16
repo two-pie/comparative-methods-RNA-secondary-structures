@@ -51,24 +51,29 @@ model = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed', l
 labels_pred = model.fit_predict(distance_matrix)
 
 f = open(sys.argv[3], 'w+')
-f.write('Method,Rand_score,Homogeneity_score,completeness_score'+'\n')
+f.write('Method,Rand_score,Homogeneity_score,completeness_score,adjusted_rand_score' + '\n')
 agg_csv = 'single,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
-    metrics.completeness_score(labels_true, labels_pred))
-f.write(agg_csv+'\n')
+    metrics.completeness_score(labels_true, labels_pred)) + ',' + str(
+    metrics.adjusted_rand_score(labels_true, labels_pred)
+)
+f.write(agg_csv + '\n')
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed', linkage='complete').fit(distance_matrix)
 labels_pred = model.fit_predict(distance_matrix)
 
 agg_csv = 'complete,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
-    metrics.completeness_score(labels_true, labels_pred))
-f.write(agg_csv+'\n')
+    metrics.completeness_score(labels_true, labels_pred)) + ',' + str(
+    metrics.adjusted_rand_score(labels_true, labels_pred))
+f.write(agg_csv + '\n')
 model = AgglomerativeClustering(n_clusters=n_clusters, affinity='precomputed', linkage='average').fit(distance_matrix)
 labels_pred = model.fit_predict(distance_matrix)
 
 agg_csv = 'average,' + str(metrics.rand_score(labels_true, labels_pred)) + ',' + str(
     metrics.homogeneity_score(labels_true, labels_pred)) + ',' + str(
-    metrics.completeness_score(labels_true, labels_pred))
-f.write(agg_csv+'\n')
+    metrics.completeness_score(labels_true, labels_pred)) + ',' + str(
+    metrics.adjusted_rand_score(labels_true, labels_pred))
+f.write(agg_csv + '\n')
+
 f.close()
 print('\x1b[1;32;40m' + f'{f.name} created' + '\x1b[0m')
