@@ -9,7 +9,7 @@ if __name__ == '__main__':
     subprocess.run(['nestedalign_distance_tool', DBNFilesNH, result_AT_nestedalign])
     subprocess.run(['rnadistance_distance_tool', DBNFilesNH, result_AT_rnadistance])
     subprocess.run(['rnaforester_distance_tool', DBNFilesNH, result_AT_rnaforester])
-    #subprocess.run(['treegraph_distance_tool', CTFilesNH, result_AT_treegraph])  TODO: da errore, aspettando lo script fixato
+    # subprocess.run(['treegraph_distance_tool', CTFilesNH, result_AT_treegraph])  TODO: da errore, aspettando lo script fixato
 
     # Molecules-pseudoknotfree
     # Archaea
