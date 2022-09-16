@@ -90,7 +90,7 @@ subprocess.run(
      os.path.join(EUKARYOTA_CLUSTERING_DIR, 'rnadistance_clustering_matrix_corePlus.csv')])
 subprocess.run(
     ['cluster_matrix', os.path.join(EUKARYOTA_COREPLUS, 'corePlus.csv'), result_MP_rnaforester_Eukaryota,
-     os.path.join(EUKARYOTA_CLUSTERING_DIR, 'rnaforester_clustering_matri_corePlusx.csv')])
+     os.path.join(EUKARYOTA_CLUSTERING_DIR, 'rnaforester_clustering_matrix_corePlus.csv')])
 # core
 subprocess.run(['cluster_matrix', os.path.join(EUKARYOTA_CORE, 'core.csv'), result_MP_aspralign_Eukaryota,
                 os.path.join(EUKARYOTA_CLUSTERING_DIR, 'aspralign_clustering_matrix_core.csv')])
