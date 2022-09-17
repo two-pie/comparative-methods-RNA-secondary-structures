@@ -21,6 +21,6 @@ subprocess.run(
 print('\x1b[1;32;40m' + f'{BACTERIA_COREPLUS} created' + '\x1b[0m')
 print('\x1b[1;32;40m' + f'{BACTERIA_CORE} created' + '\x1b[0m')
 subprocess.run(
-    ['cores_calculator_tool', '-csv', db_eukaryota, EUKARYOTA_COREPLUS, EUKARYOTA_CORE])
+    ['cores_calculator_tool', '-csv', dbnh_eukaryota, EUKARYOTA_COREPLUS, EUKARYOTA_CORE])
 print('\x1b[1;32;40m' + f'{EUKARYOTA_COREPLUS} created' + '\x1b[0m')
 print('\x1b[1;32;40m' + f'{EUKARYOTA_CORE} created' + '\x1b[0m')
