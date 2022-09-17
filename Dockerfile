@@ -59,4 +59,15 @@ RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType/distances  \
     ln -s /home/matlab/Documents/MATLAB/gp/workbench/clustering/ClusterFeatures.py cluster_features; \
     ln -s /opt/conda/bin/RNAforester RNAforester; \
     ln -s /opt/conda/bin/RNAdistance RNAdistance; \
-    echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc
+    echo "export PATH='$(pwd):$PATH'" | sudo tee -a /etc/bash.bashrc;\
+    sudo apt install dos2unix; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/aspralign_workbench/aspralign_workbench.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/dualgraph_workbench/dualgraph_workbench.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/nestedalign_workbench/nestedalign_workbench.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnadistance_workbench/rnadistance_workbench.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/rnaforester_workbench/rnaforester_workbench.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/distance_tools/treegraph_workbench/treegraph_workbench.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/core/coresCalculator.sh; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/clustering/ClusterMatrix.py; \
+    sudo dos2unix /home/matlab/Documents/MATLAB/gp/workbench/clustering/ClusterFeatures.py
+
