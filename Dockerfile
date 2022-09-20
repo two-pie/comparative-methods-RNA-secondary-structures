@@ -13,23 +13,22 @@ RUN sudo apt-get -y update; sudo apt-get -y install python3 git curl sudo openjd
     # Download and install miniconda
     sudo wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh  \
     && sudo /bin/bash miniconda.sh -b -p /opt/conda  \
-    && sudo rm miniconda.sh
-
-# ViennaRNA
-RUN sudo /opt/conda/bin/conda update -y conda; \
+    && sudo rm miniconda.sh;\
+    # ViennaRNA
+    sudo /opt/conda/bin/conda update -y conda; \
     sudo /opt/conda/bin/conda install -y -c bioconda/label/cf201901 viennarna; \
     # Remove unnecessary packages
     sudo apt-get -y purge --auto-remove curl git
+    
+ADD workbench ./workbench
 
-# This section is just for caching, it will be removed later
-ADD requirements.txt .
-RUN sudo pip -q install -r requirements.txt  \
+# Install pip dependencies
+RUN sudo pip -q install -r workbench/requirements.txt  \
     && sudo rm requirements.txt \
     && sudo pip install --upgrade urllib3 \
-    && sudo pip install --upgrade requests
-ADD workbench ./workbench
-RUN sudo chmod -R 777 /home/matlab/Documents/MATLAB/gp
-RUN mkdir -p workbench/workbench_results/Archaea-90-110-allType/distances  \
+    && sudo pip install --upgrade requests; \
+    sudo chmod -R 777 /home/matlab/Documents/MATLAB/gp; \
+    mkdir -p workbench/workbench_results/Archaea-90-110-allType/distances  \
     workbench/workbench_results/Molecules-pseudoknotfree/Archaea/5S/distances  \
     workbench/workbench_results/Molecules-pseudoknotfree/Bacteria/5S/distances  \
     workbench/workbench_results/Molecules-pseudoknotfree/Eukaryota/5S/distances \
